@@ -1,5 +1,6 @@
 .conversation-block{
 	padding: 30px 25px;
+	background: #eef2f5;
 	@media (min-width: $screen-sm-min) {
 		padding: 30px 45px;
 	}
@@ -8,6 +9,8 @@
 		padding: 30px 30px;
 	}
 	.comment-block{
+		overflow: hidden;
+		margin-bottom: 40px;
 		.photo-wrapper{
 			float: left;
 			margin-right: 20px;

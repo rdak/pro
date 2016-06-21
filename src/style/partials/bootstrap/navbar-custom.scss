@@ -210,6 +210,9 @@
 }
 
 .navbar-inverse {
+  .js-scroll &{
+    background: rgba(69, 189, 201, 0.7);
+  }
   background-color: $navbar-inverse-bg;
   .js-scroll &{
     background-color: rgba(69, 189, 201, 0.7);

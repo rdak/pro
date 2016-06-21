@@ -1,0 +1,36 @@
+.footer{
+	padding: 15px 10px;
+	background: #1d1d1d;
+	color: #fff;
+	margin-top: 70px;
+	a,
+	a:hover,
+	a:focus{
+		color: #fff;
+	}
+	.brand{
+		margin-bottom: 10px;
+		display: block;
+		font-size: 20px;
+		line-height: 1.4;
+    	font-family: Brandon;
+	}
+	ul{
+		padding: 0;
+		margin: 5px 0 0 0;
+		li {
+			float: left;
+		}
+		a {
+			display: block;
+			padding: 10px 50px;
+			text-transform: uppercase;
+		}
+	}
+
+	.copyright,
+	.support{
+		font-size: 12px;
+		line-height: 2;
+	}
+}
