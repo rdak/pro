@@ -11,3 +11,14 @@
 
 @import "partials/articleMain";
 @import "partials/articleMiddle";
+@import "partials/articleSmall";
+
+@font-face {
+	font-family: Proxima;
+	src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Brandon;
+	src: url("../fonts/Brandon Grotesque (logo)/Brandon_reg.otf") format("opentype");
+}

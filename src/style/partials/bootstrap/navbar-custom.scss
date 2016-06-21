@@ -211,9 +211,13 @@
 
 .navbar-inverse {
   background-color: $navbar-inverse-bg;
+  .js-scroll &{
+    background-color: rgba(69, 189, 201, 0.7);
+  }
 
   .navbar-brand {
     color: $navbar-inverse-brand-color;
+    font-family: Brandon;
     &:hover,
     &:focus {
       color: $navbar-inverse-brand-hover-color;
@@ -239,8 +243,8 @@
         background: #a13a78;
         bottom: 0px;
         height: 10px;
-        right: 14px;
-        left: 14px;
+        right: 12px;
+        left: 12px;
         z-index: -1;
         -webkit-transform-origin: left center;
         transform-origin: left center;
@@ -290,10 +294,10 @@
 
   // Darken the responsive nav toggle
   .navbar-toggle {
-    border-color: $navbar-inverse-toggle-border-color;
+    border-color: none;
     &:hover,
     &:focus {
-      background-color: $navbar-inverse-toggle-hover-bg;
+      background-color: transparent;
     }
     .icon-bar {
       background-color: $navbar-inverse-toggle-icon-bar-bg;
