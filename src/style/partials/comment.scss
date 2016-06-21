@@ -1,0 +1,36 @@
+.conversation-block{
+	padding: 30px 25px;
+	@media (min-width: $screen-sm-min) {
+		padding: 30px 45px;
+	}
+
+	@media (min-width: $screen-md-min) {
+		padding: 30px 30px;
+	}
+	.comment-block{
+		.photo-wrapper{
+			float: left;
+			margin-right: 20px;
+		}
+		.info{
+			float: left;
+			.name{
+				font-size: 15px;
+				line-height: 24px;
+				letter-spacing: 1px;
+				font-weight : bold;
+			}
+			.title{
+				font-size: 15px;
+				line-height: 24px;
+				margin-bottom: 5px;
+			}
+			.date{
+				color: #949494;
+				font-size: 12px;
+				line-height: 2;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
