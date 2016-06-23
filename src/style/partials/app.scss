@@ -53,15 +53,78 @@ table {
 	line-height: 29px;
 }
 
-.news,
-.literature{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	.title-section{
-		margin-bottom: 25px;
-		font-size: 24px;
-		line-height: 29px;
-		font-weight: bold;
+.literature-wrapper{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	@media (min-width: $screen-sm-min) {
+		margin-top: 30px;
+		margin-bottom: 0;
 	}
+	@media (min-width: $screen-md-min) {
+		margin-top: 0px;
+		margin-bottom: 0;
+	}
+	@media (min-width: $screen-lg-min) {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+}
+
+.news-wrapper{
+	margin-top: 25px;
+	margin-bottom: 0;
+	@media (min-width: $screen-sm-min) {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	@media (min-width: $screen-md-min) {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	@media (min-width: $screen-lg-min) {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.conversation-wrapper{
+	margin-top: 0;
+	margin-bottom: 10px;
+	@media (min-width: $screen-sm-min) {
+		margin-top: 40px;
+		margin-bottom: 5px;
+	}
+	@media (min-width: $screen-md-min) {
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	@media (min-width: $screen-lg-min) {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+}
+
+.opinion-wrapper{
+	margin-top: 0px;
+	margin-bottom: 35px;
+	@media (min-width: $screen-sm-min) {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	@media (min-width: $screen-md-min) {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	@media (min-width: $screen-lg-min) {
+		margin-top: 0px;
+		margin-bottom: 70px;
+	}
+}
+
+.title-section{
+	margin-bottom: 25px;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: bold;
 }
 

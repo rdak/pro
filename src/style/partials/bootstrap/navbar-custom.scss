@@ -96,7 +96,8 @@
 
 .navbar-brand {
   float: left;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  padding: 0 $navbar-padding-horizontal;
+  margin: $navbar-padding-vertical 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 21px;
@@ -211,12 +212,9 @@
 
 .navbar-inverse {
   .js-scroll &{
-    background: rgba(69, 189, 201, 0.7);
+    background: rgba(69, 189, 201, 0.9);
   }
   background-color: $navbar-inverse-bg;
-  .js-scroll &{
-    background-color: rgba(69, 189, 201, 0.7);
-  }
 
   .navbar-brand {
     color: $navbar-inverse-brand-color;
@@ -232,68 +230,7 @@
     color: $navbar-inverse-color;
   }
 
-  .navbar-nav {
-    > li > a {
-      color: $navbar-inverse-link-color;
-      &,
-      &:hover,
-      &:focus{
-        background: none;
-      }
-      &:before{
-        content: '';
-        position: absolute;
-        background: #a13a78;
-        bottom: 0px;
-        height: 10px;
-        right: 12px;
-        left: 12px;
-        z-index: -1;
-        -webkit-transform-origin: left center;
-        transform-origin: left center;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-        transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .4s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .4s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      }
-      &:hover:before {
-          -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-          transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-          transition: transform cubic-bezier(0.785,.135,.15,.86) .6s;
-          transition: transform cubic-bezier(0.785,.135,.15,.86) .6s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-      }
-    }
-    > .active > a {
-      &:before{
-        content: '';
-        position: absolute;
-        background: #a13a78;
-        bottom: 0px;
-        height: 10px;
-        right: 12px;
-        left: 12px;
-        z-index: -1;
-        -webkit-transform-origin: left center;
-        transform-origin: left center;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-        transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .4s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .4s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-        -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .6s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-      }
-    }
-  }
+
 
   // Darken the responsive nav toggle
   .navbar-toggle {
@@ -311,6 +248,78 @@
     color: $navbar-inverse-link-color;
     &:hover {
       color: $navbar-inverse-link-hover-color;
+    }
+  }
+}
+
+.navbar,
+.footer .links {
+  a,
+  .navbar-nav.nav > li > a {
+    display: block;
+    position: relative;
+    color: $navbar-inverse-link-color;
+    &,
+    &:hover,
+    &:focus{
+      background: none;
+    }
+    &.navbar-brand:before{
+      background: rgba(161,58,120,0.7);
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      background: #a13a78;
+      bottom: 0px;
+      height: 10px;
+      right: 12px;
+      left: 12px;
+      z-index: -1;
+      -webkit-transform-origin: left center;
+      transform-origin: left center;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
+      transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
+      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s;
+      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
+    }
+    &:hover:before {
+        -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
+        transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
+        transition: transform cubic-bezier(0.785,.135,.15,.86) .6s;
+        transition: transform cubic-bezier(0.785,.135,.15,.86) .6s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+  }
+  .navbar-nav.nav > .active > a {
+    &:before{
+      content: '';
+      position: absolute;
+      background: #a13a78;
+      bottom: 0px;
+      height: 10px;
+      right: 12px;
+      left: 12px;
+      z-index: -1;
+      -webkit-transform-origin: left center;
+      transform-origin: left center;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
+      transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
+      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s;
+      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
+      -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
+      transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
+      transition: transform cubic-bezier(0.785,.135,.15,.86) .6s;
+      transition: transform cubic-bezier(0.785,.135,.15,.86) .6s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+
+
     }
   }
 }
