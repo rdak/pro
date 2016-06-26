@@ -2,6 +2,7 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
     <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/main.css">
@@ -18,6 +19,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="#">eng</a></li>
+            <li><a href="#">войти</a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
           <a class="navbar-brand" href="#"><strong>PRO</strong>INTELLEKT</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -51,7 +57,7 @@
     </div>
     <div class="container article-body">
     	<div class="row">
-    		<div class="col-lg-8">
+    		<div class="col-lg-8 col-xs-12">
     			<div class="article-tag-list">
     				<div class="tag-item">РАЗУМ</div>
     				<div class="tag-item">РАЗУМ</div>
@@ -60,10 +66,10 @@
     				<div class="tag-item">РАЗУМ</div>
     				<div class="tag-item">РАЗУМ</div>
     			</div>
-    			<div class="share-social-list">
-    				<div class="social-item vk"></div>
-    				<div class="social-item fb"></div>
-    				<div class="social-item tw"></div>
+    			<div class="social-likes social-likes_notext" data-url="http://landscapists.info/" data-zeroes='yes' data-counters="yes">
+    				<div class="vkontakte" title="Поделиться ссылкой во Вконтакте"></div>
+    				<div class="facebook" title="Поделиться ссылкой на Фейсбуке"></div>
+    				<div class="twitter" title="Поделиться ссылкой в Твиттере"></div>
     			</div>
     			<div class="article">
     				<div class="lead">
@@ -105,10 +111,10 @@
     					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum in, obcaecati rem reiciendis at, nulla tempora nam quisquam placeat accusamus?
     				</p>
     			</div>
-    			<div class="share-social-list">
-    				<div class="social-item vk"></div>
-    				<div class="social-item vk"></div>
-    				<div class="social-item vk"></div>
+    			<div class="social-likes social-likes_notext" data-url="http://landscapists.info/" data-zeroes='yes' data-counters="yes">
+    				<div class="vkontakte" title="Поделиться ссылкой во Вконтакте"></div>
+    				<div class="facebook" title="Поделиться ссылкой на Фейсбуке"></div>
+    				<div class="twitter" title="Поделиться ссылкой в Твиттере"></div>
     			</div>
     			<div class="article-tag-list">
     				<div class="tag-item">РАЗУМ</div>
@@ -137,28 +143,28 @@
     								СЕГОДНЯ В 21:15 <a href="#" class="href">ОТВЕТИТЬ</a>
     							</p>
     						</div>
-    						<div class="comment-block">
-    							<div class="comment">
-    								<div class="img-wrapper">
-    									<img src="https://api.fnkr.net/testimg/70x70/ffffff/333/?text=Photo">
-    								</div>
-    								<div class="info">
-    									<p class="comment-name">ЕЛЕНА</p>
-    									<p class="comment-content">Поговорим о смысле бытия</p>
-    									<p class="comment-date">СЕГОДНЯ В 21:15</p>
-    								</div>
+    					</div>
+    					<div class="comment-block">
+    						<div class="comment">
+    							<div class="img-wrapper">
+    								<img src="https://api.fnkr.net/testimg/70x70/ffffff/333/?text=Photo">
+    							</div>
+    							<div class="comment-body">
+    								<p class="comment-name">ЕЛЕНА</p>
+    								<a href="#" class="comment-content">Поговорим о смысле бытия</a>
+    								<p class="comment-date">СЕГОДНЯ В 21:15 <i class="fa fa-comment-o"></i> 13</p>
     							</div>
     						</div>
-    						<div class="comment-block">
-    							<div class="comment">
-    								<div class="img-wrapper">
-    									<img src="https://api.fnkr.net/testimg/70x70/ffffff/333/?text=Photo">
-    								</div>
-    								<div class="info">
-    									<p class="comment-name">ЕЛЕНА</p>
-    									<p class="comment-content">Поговорим о смысле бытия</p>
-    									<p class="comment-date">СЕГОДНЯ В 21:15</p>
-    								</div>
+    					</div>
+    					<div class="comment-block">
+    						<div class="comment">
+    							<div class="img-wrapper">
+    								<img src="https://api.fnkr.net/testimg/70x70/ffffff/333/?text=Photo">
+    							</div>
+    							<div class="comment-body">
+    								<p class="comment-name">ЕЛЕНА</p>
+    								<a href="#" class="comment-content">Поговорим о смысле бытия</a>
+    								<p class="comment-date">СЕГОДНЯ В 21:15 <i class="fa fa-comment-o"></i> 13</p>
     							</div>
     						</div>
     					</div>
@@ -168,77 +174,90 @@
     						<div class="img-wrapper">
     							<img src="https://api.fnkr.net/testimg/70x70/ffffff/333/?text=Photo">
     						</div>
-    						<div class="info">
+    						<div class="comment-body">
     							<p class="comment-name">ЕЛЕНА</p>
-    							<p class="comment-content">Поговорим о смысле бытия</p>
-    							<p class="comment-date">СЕГОДНЯ В 21:15</p>
+    							<a href="#" class="comment-content">Поговорим о смысле бытия</a>
+    							<p class="comment-date">СЕГОДНЯ В 21:15 <i class="fa fa-comment-o"></i> 13</p>
     						</div>
     					</div>
     				</div>
     				<div class="reply-block">
     					<p class="reply">
-    						<a href="#">АВТОРИЗУЙТЕСЬ</a> чтобы оставлять комментарии
+    						<a href="#" class="btn-readmore">АВТОРИЗУЙТЕСЬ</a> чтобы оставлять комментарии
     					</p>
     					<div class="wysiwyg-block">
     						<div class="wysiwyg">
     							<div class="wysiwyg-content"></div>
-    							<div class="wysiwyg-panel">
-    								
-    							</div>
+    							<div class="wysiwyg-panel"></div>
     						</div>
-    						<a href="#">Комментировать</a>
+    						<a href="#" class="btn-readmore">Комментировать</a>
     					</div>
     				</div>
     			</div>
     		</div>
-    		<div class="col-lg-4 col-sm-6">
-    			<img src="https://api.fnkr.net/testimg/420x420/eef2f5/1d1d1d/?text=Ads">
-    			<div class="article-small" href="#">
-    				<div class="bg-wrapper">
-    					<div class="bg-cover">
-    						<div class="bg"></div>
+    		<div class="col-lg-4 col-xs-12">
+    			<div class="row">
+    				<div class="col-xs-12 col-sm-6 col-lg-12">
+    					<img class="article-adphoto" src="https://api.fnkr.net/testimg/420x420/eef2f5/1d1d1d/?text=Ads">
+    				</div>
+    				<div class="col-xs-12">
+    					<div class="title-section">
+    						<p class="">Статьи</p>
     					</div>
     				</div>
-    				<div class="info">
-    					<div class="article">
-    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
-    					</div>
-    					<p class="author">13 МАЯ В 14:55 13</p>
-    					<a href="#" class="btn-readmore">
-    						ЧИТАТЬ СТАТЬЮ
-    					</a>
-    				</div>
-    			</div>
-    			<div class="article-small" href="#">
-    				<div class="bg-wrapper">
-    					<div class="bg-cover">
-    						<div class="bg"></div>
-    					</div>
-    				</div>
-    				<div class="info">
-    					<div class="article">
-    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
-    					</div>
-    					<p class="author">13 МАЯ В 14:55 13</p>
-    					<a href="#" class="btn-readmore">
-    						ЧИТАТЬ СТАТЬЮ
-    					</a>
-    				</div>
-    			</div>
-    			<div class="article-small" href="#">
-    				<div class="bg-wrapper">
-    					<div class="bg-cover">
-    						<div class="bg"></div>
+    				<div class="col-xs-12 col-sm-6 col-lg-12">
+    					<div class="article-small" href="#">
+    						<div class="bg-wrapper" style="background: url('img/img1s-color.png') no-repeat;">
+    							<div class="bg-cover">
+    								<div class="bg" style="background: url('img/img1s-color.png') no-repeat;"></div>
+    							</div>
+    						</div>
+    						<div class="info">
+    							<div class="article">
+    								<p class="title">Книги об искусстве в свободном доступе</p>
+    							</div>
+    							<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    							<a href="#" class="btn-readmore">
+    								Читать статью
+    							</a>
+    						</div>
     					</div>
     				</div>
-    				<div class="info">
-    					<div class="article">
-    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
+    				<div class="col-xs-12 col-sm-6 col-lg-12">
+    					<div class="article-small" href="#">
+    						<div class="bg-wrapper" style="background: url('img/img2s-color.png') no-repeat;">
+    							<div class="bg-cover">
+    								<div class="bg" style="background: url('img/img2s-color.png') no-repeat;"></div>
+    							</div>
+    						</div>
+    						<div class="info">
+    							<div class="article">
+    								<p class="title">Cколько россиян хотели бы не работать</p>
+    							</div>
+    							<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    							<a href="#" class="btn-readmore">
+    								Читать статью
+    							</a>
+    						</div>
     					</div>
-    					<p class="author">13 МАЯ В 14:55 13</p>
-    					<a href="#" class="btn-readmore">
-    						ЧИТАТЬ СТАТЬЮ
-    					</a>
+    				</div>
+    				<div class="col-xs-12 col-sm-6 col-lg-12">
+    					<div class="article-small" href="#">
+    						<div class="bg-wrapper" style="background: url('img/img3s-color.png') no-repeat;">
+    							<div class="bg-cover">
+    								<div class="bg" style="background: url('img/img3s-color.png') no-repeat;"></div>
+    							</div>
+    						</div>
+    						<div class="info">
+    							<div class="article">
+    								<p class="title">Стартует чемпионат для старшеклассников по борьбе с киберугрозами</p>
+    							</div>
+    							<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    							<a href="#" class="btn-readmore">
+    								Читать статью
+    							</a>
+    						</div>
+    					</div>
     				</div>
     			</div>
     		</div>
@@ -250,99 +269,99 @@
     		<p class="">НОВОСТИ</p>
     	</div>
     	<div class="row">
-    			<div class="col-lg-4 col-sm-6">
-    				<div class="article-small" href="#">
-    					<div class="bg-wrapper">
-    						<div class="bg-cover">
-    							<div class="bg"></div>
-    						</div>
-    					</div>
-    					<div class="info">
-    						<div class="article">
-    							<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
-    						</div>
-    						<p class="author">13 МАЯ В 14:55 13</p>
-    						<a href="#" class="btn-readmore">
-    							ЧИТАТЬ СТАТЬЮ
-    						</a>
+    		<div class="col-lg-4 col-sm-6">
+    			<div class="article-small article-news" href="#">
+    				<div class="bg-wrapper" style="background: url('img/img1s-color.png') no-repeat;">
+    					<div class="bg-cover">
+    						<div class="bg" style="background: url('img/img1s-color.png') no-repeat;"></div>
     					</div>
     				</div>
-    			</div>
-    			<div class="col-lg-4 col-sm-6">
-    				<div class="article-small" href="#">
-    					<div class="bg-wrapper">
-    						<div class="bg-cover">
-    							<div class="bg"></div>
-    						</div>
+    				<div class="info">
+    					<div class="article">
+    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
     					</div>
-    					<div class="info">
-    						<div class="article">
-    							<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
-    						</div>
-    						<p class="author">13 МАЯ В 14:55 13</p>
-    						<a href="#" class="btn-readmore">
-    							ЧИТАТЬ СТАТЬЮ
-    						</a>
-    					</div>
+    					<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    					<a href="#" class="btn-readmore">
+    						Читать новость
+    					</a>
     				</div>
     			</div>
-    			<div class="col-lg-4 col-sm-6">
-    				<div class="article-small" href="#">
-    					<div class="bg-wrapper">
-    						<div class="bg-cover">
-    							<div class="bg"></div>
-    						</div>
-    					</div>
-    					<div class="info">
-    						<div class="article">
-    							<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
-    						</div>
-    						<p class="author">13 МАЯ В 14:55 13</p>
-    						<a href="#" class="btn-readmore">
-    							ЧИТАТЬ СТАТЬЮ
-    						</a>
+    		</div>
+    		<div class="col-lg-4 col-sm-6">
+    			<div class="article-small article-news" href="#">
+    				<div class="bg-wrapper" style="background: url('img/img2s-color.png') no-repeat;">
+    					<div class="bg-cover">
+    						<div class="bg" style="background: url('img/img2s-color.png') no-repeat;"></div>
     					</div>
     				</div>
-    			</div>
-    			<div class="col-lg-4 col-sm-6">
-    				<img src="https://api.fnkr.net/testimg/420x420/eef2f5/1d1d1d/?text=Ads">
-    			</div>
-    			<div class="col-lg-4 col-sm-6">
-    				<div class="article-small" href="#">
-    					<div class="bg-wrapper">
-    						<div class="bg-cover">
-    							<div class="bg"></div>
-    						</div>
+    				<div class="info">
+    					<div class="article">
+    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
     					</div>
-    					<div class="info">
-    						<div class="article">
-    							<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
-    						</div>
-    						<p class="author">13 МАЯ В 14:55 13</p>
-    						<a href="#" class="btn-readmore">
-    							ЧИТАТЬ СТАТЬЮ
-    						</a>
-    					</div>
+    					<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    					<a href="#" class="btn-readmore">
+    						Читать новость
+    					</a>
     				</div>
     			</div>
-    			<div class="col-lg-4 col-sm-6">
-    				<div class="article-small" href="#">
-    					<div class="bg-wrapper">
-    						<div class="bg-cover">
-    							<div class="bg"></div>
-    						</div>
-    					</div>
-    					<div class="info">
-    						<div class="article">
-    							<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
-    						</div>
-    						<p class="author">13 МАЯ В 14:55 13</p>
-    						<a href="#" class="btn-readmore">
-    							ЧИТАТЬ СТАТЬЮ
-    						</a>
+    		</div>
+    		<div class="col-lg-4 col-sm-6">
+    			<div class="article-small article-news" href="#">
+    				<div class="bg-wrapper" style="background: url('img/img3s-color.png') no-repeat;">
+    					<div class="bg-cover">
+    						<div class="bg" style="background: url('img/img3s-color.png') no-repeat;"></div>
     					</div>
     				</div>
+    				<div class="info">
+    					<div class="article">
+    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
+    					</div>
+    					<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    					<a href="#" class="btn-readmore">
+    						Читать новость
+    					</a>
+    				</div>
     			</div>
+    		</div>
+    		<div class="col-lg-4 col-sm-6">
+    			<img class="article-adphoto" src="https://api.fnkr.net/testimg/420x420/eef2f5/1d1d1d/?text=Ads">
+    		</div>
+    		<div class="col-lg-4 col-sm-6">
+    			<div class="article-small article-news" href="#">
+    				<div class="bg-wrapper" style="background: url('img/img4s-color.png') no-repeat;">
+    					<div class="bg-cover">
+    						<div class="bg" style="background: url('img/img4s-color.png') no-repeat;"></div>
+    					</div>
+    				</div>
+    				<div class="info">
+    					<div class="article">
+    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
+    					</div>
+    					<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    					<a href="#" class="btn-readmore">
+    						Читать новость
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-4 col-sm-6">
+    			<div class="article-small article-news" href="#">
+    				<div class="bg-wrapper" style="background: url('img/img5s-color.png') no-repeat;">
+    					<div class="bg-cover">
+    						<div class="bg" style="background: url('img/img5s-color.png') no-repeat;"></div>
+    					</div>
+    				</div>
+    				<div class="info">
+    					<div class="article">
+    						<p class="title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
+    					</div>
+    					<p class="author">13 МАЯ В 14:55 <i class="fa fa-comment-o"></i> 13</p>
+    					<a href="#" class="btn-readmore">
+    						Читать новость
+    					</a>
+    				</div>
+    			</div>
+    		</div>
     	</div>
     </div>
     <footer class="footer">

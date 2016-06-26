@@ -1,0 +1,19 @@
+.opinion-body{
+	padding-top:20px;
+	.opinion-block{
+		.info{
+			overflow: hidden;
+			.opinion-title{
+				font-size: 18px;
+				line-height: 24px;
+				margin: 5px 0;
+				font-weight: bold;
+			}
+			.opinion-content{
+				font-size: 15px;
+				line-height: 24px;
+			}
+		}
+
+	}
+}

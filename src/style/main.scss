@@ -10,12 +10,22 @@
 @import "partials/app";
 
 @import "partials/articleMain";
+@import "partials/articleBig";
 @import "partials/articleMiddle";
 @import "partials/articleSmall";
 @import "partials/comment";
 @import "partials/decorate-img";
 @import "partials/footer";
 @import "partials/opinion";
+
+@import "partials/article-page/article-header";
+@import "partials/article-page/article-body";
+
+@import "partials/news-page/newsList-header.scss";
+@import "partials/news-page/newsList-body.scss";
+
+@import "partials/opinion-page/opinionList-header.scss";
+@import "partials/opinion-page/opinionList-body.scss";
 
 @font-face {
 	font-family: Proxima;

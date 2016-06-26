@@ -5,6 +5,7 @@
     "rdak <seva@chebykin.com>"
   ],
   "dependencies": {
+    "components-font-awesome" : "*",
     "normalize.css": "*",
     "jquery": "2.*"
   },

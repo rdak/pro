@@ -1,0 +1,25 @@
+.pagination>li>a, .pagination>li>span{
+	border: none;
+	color: #1d1d1d;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 2;
+    color: #45bdc9;
+    background-color: none;
+    border-color: none;
+}
+
+.news-body{
+	padding-top:20px;
+	blockquote{
+		text-transform : uppercase;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 18px;
+		border-left: 10px solid #37bca5;
+		background: #eef2f5;
+		padding: 15px 20px;
+		margin-bottom: 25px;
+	}
+}

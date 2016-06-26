@@ -11,24 +11,35 @@
 }
 
 .comment-block{
-	overflow: hidden;
-	margin-bottom: 40px;
+	.comment-block{
+		margin-left:10%;
+	}
+	.comment{
+		overflow: hidden;
+		margin-bottom: 40px;
+	}
 	.img-wrapper{
 		float: left;
 		margin-right: 20px;
 	}
-	.info{
-		float: left;
+	.comment-body{
+		overflow: hidden;
 		.comment-name{
 			font-size: 15px;
 			line-height: 24px;
 			letter-spacing: 1px;
 			font-weight : bold;
 		}
-		.comment-title{
+		.comment-content{
 			font-size: 15px;
 			line-height: 24px;
 			margin-bottom: 5px;
+			color: #1d1d1d;
+			&:focus,
+			&:hover{
+				text-decoration: none;
+				color: #2da1ad;
+			}
 		}
 		.comment-date{
 			color: #949494;
