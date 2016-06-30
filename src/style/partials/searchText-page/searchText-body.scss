@@ -1,0 +1,35 @@
+.searchText-body{
+	padding-top: 20px;
+	.result-title{
+		padding: 30px 0;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.section-tag-list{
+		float: left;		
+	}
+	.search-item{
+		padding: 25px 0;
+		.title{
+			font-size: 18px;
+			line-height: 30px;
+		}
+
+		.content{
+			font-size:15px;
+			line-height: 18px;
+			margin-bottom: 10px;
+		}
+
+		.tag-item{
+			float: left;
+			margin-right: 20px;
+		}
+
+		.date{
+			font-size: 12px;
+			line-height: 24px;
+			letter-spacing: 1px;
+		}
+	}
+}

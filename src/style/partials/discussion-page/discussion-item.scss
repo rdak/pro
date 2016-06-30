@@ -1,0 +1,27 @@
+.discussion-item-full{
+	padding: 25px 30px;
+	background: #fff;
+	&:nth-child(2n){
+		background: #eef2f5;
+	}
+	.discussion-title{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	.discussion-author{
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.discussion-comments{
+		margin-bottom: 5px;
+	}
+
+	.discussion-comments,
+	.discussion-date,
+	.discussion-title{
+		letter-spacing: 1px;
+		color: #949494;
+	}
+}

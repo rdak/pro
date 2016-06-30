@@ -9,3 +9,5 @@
  */
 //= partials/app.js
 //= partials/header.js
+//= partials/jquery.dotdotdot.js
+//= partials/articleSmall.js

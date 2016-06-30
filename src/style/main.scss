@@ -8,7 +8,10 @@
 * Custom
 */
 @import "partials/app";
+@import "partials/fonts";
 
+@import "partials/index";
+@import "partials/articleCommon";
 @import "partials/articleMain";
 @import "partials/articleBig";
 @import "partials/articleMiddle";
@@ -27,12 +30,16 @@
 @import "partials/opinion-page/opinionList-header.scss";
 @import "partials/opinion-page/opinionList-body.scss";
 
-@font-face {
-	font-family: Proxima;
-	src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("opentype");
-}
+@import "partials/opinion-page/opinion-header.scss";
+@import "partials/opinion-page/opinion-body.scss";
 
-@font-face {
-	font-family: Brandon;
-	src: url("../fonts/Brandon Grotesque (logo)/Brandon_reg.otf") format("opentype");
-}
+@import "partials/discussion-page/discussion-header.scss";
+@import "partials/discussion-page/discussion-body.scss";
+@import "partials/discussion-page/discussion-item.scss";
+
+@import "partials/searchTag-page/searchTag-header.scss";
+@import "partials/searchTag-page/searchTag-body.scss";
+
+@import "partials/searchText-page/searchText-header.scss";
+@import "partials/searchText-page/searchText-body.scss";
+

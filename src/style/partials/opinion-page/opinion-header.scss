@@ -1,0 +1,32 @@
+.opinion-header{
+	background: #45bdc9;
+	padding: 135px 0 15px 0;
+	text-transform : uppercase;
+	color: #fff;
+	.opinion-block{
+		overflow: hidden;
+		&:before{
+			content : '“';
+			font-size: 72px;
+			line-height: 72px;
+			width: 45px;
+			margin-right: 5px;
+			float: left;
+		}
+		.info{
+			.opinion-name{
+				font-size: 36px;
+				line-height: 72px;
+				letter-spacing: 1px;
+				font-weight : bold;
+				margin-bottom: 5px;
+			}
+			
+			.opinion-date{
+				font-size: 12px;
+				line-height: 36px;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}

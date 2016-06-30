@@ -1,10 +1,3 @@
-@media (max-width: $screen-sm-min){
-	.container.full-sm{
-		width: 100%;
-		padding: 0;
-	}
-}
-
 .article-big{
 	margin: 30px 0;
 	padding-bottom: 50px;
@@ -13,10 +6,19 @@
 	position: relative;
 	cursor: pointer;
 	height: 270px;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	@media (min-width: $screen-sm-min) {
+		height: 480px;
+	}
+
 	@media (min-width: $screen-md-min) {
 		margin: 50px 0;
 		height: 480px;
 	}
+
 	@media (min-width: $screen-lg-min) {
 		height: 730px;
 	}
@@ -32,7 +34,7 @@
 	.bg-wrapper{
 		width: 100%;
 		height: 270px;
-		float: left;
+		position: absolute;
 
 		@media (min-width: $screen-md-min) {
 			height: 480px;
@@ -41,92 +43,86 @@
 		@media (min-width: $screen-lg-min) {
 			height: 730px;
 		}
-
-		position: relative;
-
-		.bg-cover{
-		    opacity: 1;
-		    overflow: hidden;
-		    -webkit-transition: opacity .3s linear;
-		    transition: opacity .3s linear;
-		    background: #000;
-		    will-change: opacity;
-
-	        position: absolute;
-		    height: 100%;
-		    width: 100%;
-		    left: 0;
-		    top: 0;
-		    z-index: 1;
-			.bg{
-				position: absolute;
-			    height: 100%;
-			    width: 100%;
-			    left: 0;
-			    top: 0;
-			    z-index: 1;
-				width: 100%;
-				height: 100%;
-			    background-size: cover;
-			    background-position: center center;
-			    opacity: 1;
-			    
-			    -webkit-filter: grayscale(1);
-			    -webkit-filter: grayscale(100%);
-			    filter: gray;
-			    filter: grayscale(100%);
-			}
-		}
 	}
+
 	.info{
+		position:absolute;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		width: 100%;
 		.article{
 			color: #fff;
 			text-align: center;
 			width: 100%;
-  			height: 160px;
+  			
 			@media (min-width: $screen-md-min) {
 				width: 740px;
 			}
-			padding: 30px;
+
 			position: absolute;
 			bottom: -40px;
 			left: 0;
 			right: 0;
 			margin: auto;
 			z-index: 3;
+			padding: 25px;
+			&:after {
+			    content: '';
+			    width: 100%;
+			    position: absolute;
+			    left: 0;
+			    bottom: 0;
+			    height: 160px;
+			    z-index: -1;
+			}
 			.title{
+				@media (min-width: $screen-sm-min) {
+					width: 680px;
+				}
+				@media (min-width: $screen-md-min) {
+					width: 100%;
+					margin-bottom: 15px;
+				}
 				font-size: 30px;
 				line-height: 36px;
 				margin-bottom: 5px;
 				text-transform: uppercase;
-				font-weight: bold;
+				font-weight: 800;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			.description{
+				@media (min-width: $screen-sm-min) {
+					width: 680px;
+				}
+				@media (min-width: $screen-md-min) {
+					width: 100%;
+				}
 				font-size: 18px;
 				line-height: 22px;
 				margin-bottom: 20px;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			.author{
+				
+				@media (min-width: $screen-sm-min) {
+					width: 680px;
+					margin-bottom : 25px;
+				}
+
+				@media (min-width: $screen-md-min) {
+					width: 100%;
+					margin-bottom : 0px;
+				}
+
 				letter-spacing: 1px;
 				font-size: 12px;
 				line-height: 15px;
+				margin-left: auto;
+				margin-right: auto;
 			}
-		}
-		.bar{
-			position: absolute;
-			bottom: -40px;
-			z-index: 2;
-			background: #a13a78;
-			width: 100%;
-  			height: 160px;
-			@media (min-width: $screen-md-min) {
-				width: 740px;
-			}
-  			left: 0;
-		    right: 0;
-		    margin: auto;
-		}
-
-		
+		}	
 	}
 }

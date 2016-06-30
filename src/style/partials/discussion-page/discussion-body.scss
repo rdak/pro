@@ -1,0 +1,43 @@
+.discussionList-body{
+	padding-top:35px;
+	.title-section{
+		overflow: hidden;
+		.title{
+			font-size: 24px;
+			line-height: 32px;
+			color: #1d1d1d;
+			font-weight: bold;
+			float: left;
+			padding: 15px 0;
+		}
+		ul{
+			li{
+				padding: 18px 25px 18px 40px;
+				float: left;
+				a{
+					display: block;
+					font-size: 15px;
+					line-height: 24px;
+					color: #949494;
+					&:focus,
+					&:hover,
+					&:active{
+						text-decoration: none;
+						color: #45bdc9;
+					}
+					&.active:after{
+						font-family: FontAwesome;
+						display: inline-block;
+						content: "\f0d7";
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		.btn-readmore{
+			float: right;
+		}
+	}
+
+	
+}

@@ -3,82 +3,75 @@
 	position: relative;
 	height : 410px;
 	cursor: pointer;
-	@media (min-width: $screen-md-min) {
-		height: 530px;
+	.bg-wrapper{
+		display: block;
 	}
-	@media (min-width: $screen-lg-min) {
+	@media (min-width: $screen-sm-min) {
+		height: 480px;
+	}
+
+	@media (min-width: $screen-md-min) {
 		height: 600px;
 	}
+
 	&:hover{
 		.bg-wrapper{
 			.bg-cover{
 				opacity: 0;
-				.bg{
-				}
 			}
 		}
 	}
+
 	.bg-wrapper{
 		width: 100%;
 		height: 100%;
-		position: relative;
-		
-		background-size: cover;
-	    background-position: center center;
-		.bg-cover{
-		    opacity: 1;
-		    overflow: hidden;
-		    -webkit-transition: opacity .3s linear;
-		    transition: opacity .3s linear;
-		    background: #000;
-		    will-change: opacity;
-
-	        position: absolute;
-		    height: 100%;
-		    width: 100%;
-		    left: 0;
-		    top: 0;
-		    z-index: 1;
-			.bg{
-				position: absolute;
-			    height: 100%;
-			    width: 100%;
-			    left: 0;
-			    top: 0;
-			    z-index: 1;
-				width: 100%;
-				height: 100%;
-				
-			    background-size: cover;
-			    background-position: center center;
-			    opacity: 1;
-			    
-			    -webkit-filter: grayscale(1);
-			    -webkit-filter: grayscale(100%);
-			    filter: gray;
-			    filter: grayscale(100%);
-			}
-		}
-	}
-
-	.container{
-		height:100%;
 	}
 	
 	.info{
-		height: 100%;
+		position:absolute;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		padding: 0;
+		@media (min-width: $screen-sm-min) {
+			width: 710px;
+			padding: 0 15px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			width: 900px;
+			padding: 0 15px;
+		}
+		
 		.article{
 			color: #fff;
-			padding: 25px 75px;
-			position: absolute;
+			padding: 25px;
+			@media (min-width: $screen-sm-min) {
+				padding: 25px 0;
+			}
+			@media (min-width: $screen-sm-min) {
+				padding: 25px 75px;
+			}
+			position: relative;
 			bottom: 0;
-			z-index: 3;
+			z-index: 1;
+			
+			&:after {
+			    content: '';
+			    width: 100%;
+			    position: absolute;
+			    left: 0;
+			    bottom: 0;
+			    height: 120px;
+			    z-index: -1;
+			}
 			.title{
-				font-weight: bold;
+				font-weight: 800;
 				letter-spacing: 1px;
 				font-size: 36px;
 				line-height: 44px;
 				margin-bottom: 4px;
+				text-transform: uppercase;
 			}
 			.description{
 				font-size: 18px;
@@ -90,14 +83,6 @@
 				font-size: 12px;
 				line-height: 15px;
 			}
-		}
-		.bar{
-			position: absolute;
-			bottom: 0;
-			z-index: 2;
-			background: #a13a78;
-			width: 740px;
-			height: 120px;
 		}
 	}
 }

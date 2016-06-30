@@ -2,21 +2,55 @@
 	padding: 30px 25px;
 	background: #eef2f5;
 	@media (min-width: $screen-sm-min) {
-		padding: 30px 45px;
+		padding: 30px 0px;
 	}
 
 	@media (min-width: $screen-md-min) {
-		padding: 30px 30px;
+		padding: 30px 30px 0 30px;
 	}
+
+	.row{
+		margin-bottom: 40px;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+		.col-sm-6:nth-of-type(2n+1){
+			.comment-block{
+				float: right;
+				width: 345px;
+			}
+		}
+		.col-sm-6:nth-of-type(2n){
+			.comment-block{
+				float: left;
+				width: 345px;
+			}
+		}
+	}
+	
+	@media (min-width: $screen-md-min) {
+		.comment-block{
+			padding: 0;
+			padding-bottom: 30px;
+			width: 420px;
+			float: none;
+		}
+	}
+
+	
 }
 
 .comment-block{
+	padding: 30px 20px;
+    margin: 0 auto;
+	
 	.comment-block{
 		margin-left:10%;
 	}
 	.comment{
-		overflow: hidden;
-		margin-bottom: 40px;
 	}
 	.img-wrapper{
 		float: left;
@@ -24,27 +58,35 @@
 	}
 	.comment-body{
 		overflow: hidden;
+        
+	    @media (min-width: $screen-md-min) {
+		    width: 200px;
+		}
+	    @media (min-width: $screen-md-min) {
+		    width: 280px;
+		}
+	    @media (min-width: $screen-lg-min) {
+		    width: 300px;
+		}
 		.comment-name{
+			text-transform: uppercase;
+			display: inline-block;
 			font-size: 15px;
-			line-height: 24px;
+			line-height: 1;
 			letter-spacing: 1px;
 			font-weight : bold;
+			margin-bottom: 3px;
 		}
 		.comment-content{
+			display: inline-block;
 			font-size: 15px;
-			line-height: 24px;
+			line-height: 18px;
 			margin-bottom: 5px;
-			color: #1d1d1d;
-			&:focus,
-			&:hover{
-				text-decoration: none;
-				color: #2da1ad;
-			}
 		}
 		.comment-date{
 			color: #949494;
 			font-size: 12px;
-			line-height: 2;
+			line-height: 1;
 			letter-spacing: 1px;
 		}
 	}

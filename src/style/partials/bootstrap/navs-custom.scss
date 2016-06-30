@@ -22,12 +22,6 @@
       padding: $nav-link-padding;
       letter-spacing : 0.5px;
       font-weight: bold;
-      &:hover:after,
-      &:focus:after {
-        
-        border-bottom: #a13a78;
-
-      }
     }
 
     // Disabled state sets text to gray and nukes hover/tab effects

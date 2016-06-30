@@ -11,6 +11,13 @@
   overflow-x: visible;
   padding-right: $navbar-padding-horizontal;
   padding-left:  $navbar-padding-horizontal;
+  height: 340px;
+  @media (min-width: $screen-sm-min) {
+    height: 410px;
+  }
+  @media (min-width: $screen-md-min) {
+    height: 530px;
+  }
   @include clearfix;
   -webkit-overflow-scrolling: touch;
 
@@ -67,7 +74,8 @@
         padding-bottom: 12.5px;
         float: left;
         @media (min-width: $grid-float-breakpoint) {
-          
+          padding-top:    $navbar-padding-vertical;
+          padding-bottom: $navbar-padding-vertical;
         }
       }
     }
@@ -101,7 +109,6 @@
   padding: 0 $navbar-padding-horizontal;
   margin: $navbar-padding-vertical 0;
   font-size: 24px;
-  font-weight: bold;
   line-height: 21px;
   letter-spacing: 1.7px;
   color: #ffffff;
@@ -122,8 +129,8 @@
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: $navbar-padding-horizontal;
-  padding: 9px 10px;
+  //margin-right: $navbar-padding-horizontal;
+  padding: 9px 15px;
   @include navbar-vertical-align(34px);
   background-image: none;
 
@@ -146,15 +153,25 @@
   }
 }
 
+.navbar-header{
+  .navbar-nav > li > a{
+    font-weight: normal;
+  }
+}
+
 .navbar-nav {
   text-align: center;
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
   > li {
-    padding-top:    $navbar-padding-vertical;
+    @media (min-width: $screen-lg-min) {
+      padding-top: $navbar-padding-vertical + 1;
+    }
     padding-bottom: $navbar-padding-vertical;
   }
 
   > li > a {
+    display: inline-block;
+    color: #fff;
     font-weight: bold;
     padding-top:    0px;
     padding-bottom: 0px;
@@ -239,10 +256,10 @@
   // Darken the responsive nav toggle
   .navbar-toggle {
     border: none;
-    background: rgba(255,255,255,0.3);
+    background: none;
     &:hover,
     &:focus {
-      background-color: rgba(255,255,255,0.7);
+      
     }
     .icon-bar {
       background-color: $navbar-inverse-toggle-icon-bar-bg;
@@ -257,75 +274,3 @@
   }
 }
 
-.navbar,
-.footer .links {
-  a,
-  .navbar-nav.nav > li > a {
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    color: $navbar-inverse-link-color;
-    &,
-    &:hover,
-    &:focus{
-      background: none;
-    }
-    &.navbar-brand:before{
-      background: rgba(161,58,120,0.7);
-    }
-    &:before{
-      content: '';
-      position: absolute;
-      background: #a13a78;
-      bottom: 0px;
-      height: 10px;
-      right: 12px;
-      left: 12px;
-      z-index: -1;
-      -webkit-transform-origin: left center;
-      transform-origin: left center;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-    }
-    &:hover:before {
-        -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        transition: transform cubic-bezier(0.785,.135,.15,.86) .6s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-    }
-  }
-  .navbar-nav.nav > .active > a {
-    &:before{
-      content: '';
-      position: absolute;
-      background: #a13a78;
-      bottom: 0px;
-      height: 10px;
-      right: 12px;
-      left: 12px;
-      z-index: -1;
-      -webkit-transform-origin: left center;
-      transform-origin: left center;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      transition: transform cubic-bezier(0.785,.135,.15,.86) .4s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .4s;
-      -webkit-transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-      transition: -webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-      transition: transform cubic-bezier(0.785,.135,.15,.86) .6s;
-      transition: transform cubic-bezier(0.785,.135,.15,.86) .6s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .6s;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-
-
-    }
-  }
-}
