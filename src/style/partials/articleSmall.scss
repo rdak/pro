@@ -1,13 +1,33 @@
 .article-small{
-	margin: 10px auto;
+	margin: 0px auto;
 	overflow: hidden;
 	max-width: 420px;
-	max-height: 420px;
+	max-height: 390px;
 	display: block;
 	position: relative;
 	cursor: pointer;
+	padding-bottom: 15px;
+	@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+		.col-sm-6:not(.ad):nth-of-type(odd) &{
+			.info{
+				float: right;
+				width: 325px;
+				height: 90px;
+			}
+		}
+		.col-sm-6:not(.ad):nth-of-type(even) &{
+			.info{
+				float: left;
+				height: 90px;
+				padding-left:0;
+			}
+		}
+	}
 	@media (min-width: $screen-md-min) {
-		height: 420px;
+		height: 390px;
+		padding-bottom: 0;
+		margin-top: 10px;
+		margin-bottom: 30px;
 	}
 	&.article-news{
 		.info .btn-readmore:after{
@@ -75,23 +95,9 @@
 	    z-index: 10;
 		padding-top: 10px;
 
-
-
-		@media (min-width: $screen-md-min) {
-			float: left;
-			padding-left: 45px;
-			padding-right: 45px;
-		}
 		@media (min-width: $screen-md-min) {
 			padding-left: 0px;
 			padding-right: 0px;
-			padding-top: 15px;
-		}
-		@media (min-width: $screen-md-min) {
-			padding-top: 10px;
-		}
-		@media (min-width: $screen-md-min) {
-			padding-top: 20px;
 		}
 
 		.article{
@@ -119,7 +125,7 @@
 		display: none;
 		position: absolute;
 		
-		bottom: 15px;
+		bottom: 0;
 		text-transform: uppercase;
 		@media (min-width: $screen-md-min) {
 			display: inline-block;

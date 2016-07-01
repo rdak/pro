@@ -72,15 +72,18 @@ strong{
 }
 
 .title-section{
-	margin-bottom: 25px;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 18px;
+	line-height: 22px;
 	font-weight: 600;
-	width:100%;
+
+	margin-bottom: 15px;
+
 	padding: 0 25px;
 	margin-left: auto;
 	margin-right: auto;
 	@media (min-width: $screen-sm-min) {
+		font-size: 24px;
+		line-height: 29px;
 		width: 680px;
 		padding: 0;
 	}
@@ -99,7 +102,6 @@ strong{
 
 .adphoto{
 	padding-bottom: 10px;
-	display: none;
 	@media(min-width: $screen-lg-min){
 		display: block;
 	}
@@ -278,10 +280,14 @@ a.btn-hover {
 	}
 }
 
-@media (max-width: $screen-sm-min){
-	.container{
-		padding: 0 25px;
+.container{
+	//padding: 0 25px;
+	@media (min-width: $screen-md-min){
+		padding: 0 15px;
 	}
+}
+
+@media (max-width: $screen-sm-min){
 	.container.full-sm{
 		width: 100%;
 		padding: 0;
@@ -312,27 +318,56 @@ a.btn-hover {
 	}
 }
 
-body{
-	overflow-x: hidden;
-}
-
-body .row {
-	margin-left: 0;
-	margin-right: 0;
-	@media (min-width: $screen-xs-min) {
-	    margin-left: -15px;
-	    margin-right: -15px;
-	}
-}
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
-	@media (max-width: $screen-sm-min) {
+body {
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
 		padding: 0;
+		@media (min-width: $screen-sm-min) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+	}
+	.container{
+		padding-left: 25px;
+		padding-right: 25px;
+		@media (min-width: $screen-sm-min) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+		@media (min-width: $screen-sm-min) {
+		    margin-left: -15px;
+		    margin-right: -15px;
+		}
 	}
 }
+
+#navbar .nav.navbar-nav.submenu{
+	@media (min-width: $screen-lg-min) {
+		float: right;
+	}
+	
+	@media (max-width: $screen-sm-min) {
+		li{
+			overflow: hidden;
+		}
+	}
+}
+
+svg{
+	vertical-align: middle;
+}
+
 
 .lang, .login{
 	@media (max-width: $screen-sm-min) {
 		display: none !important;
 	}
+}
+
+.ad{
+	text-align: center;
 }

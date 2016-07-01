@@ -1,28 +1,35 @@
 .opinionList-block{
 	background: #eef2f5;
-	padding: 30px 25px;
+	padding: 30px 0 0;
 	@media (min-width: $screen-sm-min) {
 		padding: 30px 20px;
 	}
 
 	@media (min-width: $screen-md-min) {
-		padding: 30px 60px 30px 20px;
+		padding: 30px 20px 0px 20px;
 	}
 
 	@media (min-width: $screen-lg-min) {
 		padding: 25px 20px;
 	}
+	
 	.opinion-block{
 		overflow: hidden;
-		margin-bottom: 15px;
+		padding: 0 25px;
+    	margin: 0px auto 25px;
+    	@media (min-width: $screen-sm-min) {
+    		padding: 0;
+		    width: 680px;
+    	}
+
+    	@media (min-width: $screen-md-min) {
+	    	margin-bottom: 30px;
+    		padding: 0;
+		    width: 100%;
+    	}
+
 		.info{
 			overflow: hidden;
-		}
-		@media (max-width: $screen-sm-min) {
-			width: 100%;
-			padding: 0 20px;
-			margin-left: auto;
-			margin-right: auto;
 		}
 		&:before{
 			content : '“';
@@ -30,6 +37,8 @@
 			font-size: 72px;
 			width: 45px;
 			margin-right: 5px;
+			font-weight: 900;
+			letter-spacing: 6px;
 			float: left;
 		}
 		.info{

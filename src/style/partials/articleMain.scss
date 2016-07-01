@@ -1,17 +1,16 @@
 .article-main{
 	width: 100%;
 	position: relative;
-	height : 410px;
+	height : 480px;
 	cursor: pointer;
-	.bg-wrapper{
-		display: block;
-	}
-	@media (min-width: $screen-sm-min) {
-		height: 480px;
-	}
-
+	margin-bottom: 30px;
 	@media (min-width: $screen-md-min) {
 		height: 600px;
+		margin-bottom: 20px;
+	}
+
+	.bg-wrapper{
+		display: block;
 	}
 
 	&:hover{
@@ -33,8 +32,9 @@
 		left: 0;
 		right: 0;
 		padding: 0;
-		@media (min-width: $screen-sm-min) {
-			width: 710px;
+
+		@media (min-width: $screen-md-min) {
+			width: 900px;
 			padding: 0 15px;
 		}
 
@@ -42,15 +42,27 @@
 			width: 900px;
 			padding: 0 15px;
 		}
+
+		@media (min-width: $screen-lg-min) {
+			width: 1350px;
+			padding: 0 15px;
+		}
 		
 		.article{
 			color: #fff;
-			padding: 25px;
+			padding: 15px 25px;
 			@media (min-width: $screen-sm-min) {
+				width: 680px;
 				padding: 25px 0;
+				margin: 0 auto;
 			}
-			@media (min-width: $screen-sm-min) {
-				padding: 25px 75px;
+			@media (min-width: $screen-md-min) {
+				width: 900px;
+				padding: 25px 390px 25px 0;
+			}
+			@media (min-width: $screen-lg-min) {
+				width: 100%;
+				padding: 25px 655px 25px 75px;
 			}
 			position: relative;
 			bottom: 0;
@@ -64,6 +76,18 @@
 			    bottom: 0;
 			    height: 120px;
 			    z-index: -1;
+			    @media (min-width: $screen-sm-min) {
+			    	width: 590px;
+			    	left: -40px;
+			    }
+			    @media (min-width: $screen-sm-min) {
+			    	width: 590px;
+			    	left: -40px;
+			    }
+			    @media (min-width: $screen-lg-min) {
+			    	width: 740px;
+			    	left: 0;
+			    }
 			}
 			.title{
 				font-weight: 800;
@@ -76,7 +100,7 @@
 			.description{
 				font-size: 18px;
 				line-height: 22px;
-				margin-bottom: 22px;
+				margin-bottom: 25px;
 			}
 			.author{
 				letter-spacing: 1px;

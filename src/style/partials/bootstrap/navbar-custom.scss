@@ -11,10 +11,7 @@
   overflow-x: visible;
   padding-right: $navbar-padding-horizontal;
   padding-left:  $navbar-padding-horizontal;
-  height: 340px;
-  @media (min-width: $screen-sm-min) {
-    height: 410px;
-  }
+  height: 410px;
   @media (min-width: $screen-md-min) {
     height: 530px;
   }
@@ -172,7 +169,7 @@
   > li > a {
     display: inline-block;
     color: #fff;
-    font-weight: bold;
+    
     padding-top:    0px;
     padding-bottom: 0px;
     line-height: 18px;
