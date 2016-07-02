@@ -1,14 +1,4 @@
-/*
-* Third Party
-*/
-@import "../../bower_components/normalize.css/normalize.css";
-@import "partials/bootstrap-custom";
-
-/*
-* Custom
-*/
 @import "partials/app";
-@import "partials/fonts";
 
 @import "partials/index";
 @import "partials/articleCommon";
@@ -17,29 +7,5 @@
 @import "partials/articleMiddle";
 @import "partials/articleSmall";
 @import "partials/comment";
-@import "partials/decorate-img";
-@import "partials/footer";
 @import "partials/opinion";
-
-@import "partials/article-page/article-header";
-@import "partials/article-page/article-body";
-
-@import "partials/news-page/newsList-header.scss";
-@import "partials/news-page/newsList-body.scss";
-
-@import "partials/opinion-page/opinionList-header.scss";
-@import "partials/opinion-page/opinionList-body.scss";
-
-@import "partials/opinion-page/opinion-header.scss";
-@import "partials/opinion-page/opinion-body.scss";
-
-@import "partials/discussion-page/discussion-header.scss";
-@import "partials/discussion-page/discussion-body.scss";
-@import "partials/discussion-page/discussion-item.scss";
-
-@import "partials/searchTag-page/searchTag-header.scss";
-@import "partials/searchTag-page/searchTag-body.scss";
-
-@import "partials/searchText-page/searchText-header.scss";
-@import "partials/searchText-page/searchText-body.scss";
-
+@import "partials/decorate-img";

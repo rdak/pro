@@ -2,12 +2,23 @@
 	background: #a13a78;
 	padding: 115px 0 15px 0;
 	color: #fff;
-	
+	margin-bottom: 20px;
 	.name{
-		font-weight: bold;
-		font-size: 36px;
-		line-height: 44px;
-		margin-bottom: 4px;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 30px;
+		@media (min-width: $screen-sm-min) {
+
+		}
+		@media (min-width: $screen-md-min) {
+
+		}
+		@media (min-width: $screen-lg-min) {
+			font-size: 36px;
+			line-height: 44px;
+		}
+		margin-bottom: 5px;
+
 	}
 	.description{
 		font-size: 18px;
@@ -15,7 +26,8 @@
 		margin-bottom: 20px;
 	}
 	.author{
+		font-weight: 600;
 		font-size: 12px;
-		line-height: 36px;
+		line-height: 15px;
 	}
 }

@@ -11,3 +11,5 @@
 //= partials/header.js
 //= partials/jquery.dotdotdot.js
 //= partials/articleSmall.js
+//= partials/jquery.cleditor.js
+//= partials/wysiwyg.js
