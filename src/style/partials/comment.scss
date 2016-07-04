@@ -27,26 +27,26 @@
 	    @media (min-width: $screen-lg-min) {
 		    width: 300px;
 		}
-		.comment-name{
-			text-transform: uppercase;
-			display: inline-block;
-			font-size: 15px;
-			line-height: 1;
-			letter-spacing: 1px;
-			font-weight : bold;
-			margin-bottom: 3px;
-		}
-		.comment-content{
-			display: inline-block;
-			font-size: 15px;
-			line-height: 18px;
-			margin-bottom: 5px;
-		}
-		.comment-date{
-			color: #949494;
-			font-size: 12px;
-			line-height: 1;
-			letter-spacing: 1px;
-		}
+	}
+	.comment-name{
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 1;
+		letter-spacing: 1px;
+		font-weight : 600;
+		margin-bottom: 3px;
+	}
+	.comment-content{
+		display: inline-block;
+		font-size: 15px;
+		line-height: 18px;
+		margin-bottom: 5px;
+	}
+	.comment-date{
+		color: #949494;
+		font-size: 12px;
+		line-height: 1;
+		letter-spacing: 1px;
 	}
 }

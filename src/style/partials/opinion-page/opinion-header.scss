@@ -4,24 +4,36 @@
 	text-transform : uppercase;
 	color: #fff;
 	.opinion-block{
-		overflow: hidden;
 		&:before{
 			content : '“';
 			font-size: 72px;
-			line-height: 72px;
-			width: 45px;
+			line-height: 42px;
 			margin-right: 5px;
+		    font-weight: 900;
+		    letter-spacing: 6px;
 			float: left;
+		    width: 100%;
+		    @media (min-width: $screen-sm-min) {
+			    width: 45px;
+			}
 		}
 		.info{
 			.opinion-name{
-				font-size: 36px;
-				line-height: 72px;
-				letter-spacing: 1px;
-				font-weight : bold;
+				font-size: 24px;
+				line-height: 30px;
+				@media (min-width: $screen-sm-min) {
+
+				}
+				@media (min-width: $screen-md-min) {
+
+				}
+				@media (min-width: $screen-lg-min) {
+					font-weight: 800;
+					font-size: 36px;
+					line-height: 44px;
+				}
 				margin-bottom: 5px;
 			}
-			
 			.opinion-date{
 				font-size: 12px;
 				line-height: 36px;

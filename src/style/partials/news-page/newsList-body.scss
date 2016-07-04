@@ -1,25 +1,53 @@
-.pagination>li>a, .pagination>li>span{
-	border: none;
-	color: #1d1d1d;
-}
-
-.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
-    z-index: 2;
-    color: #45bdc9;
-    background-color: none;
-    border-color: none;
-}
-
 .news-body{
-	padding-top:20px;
+	overflow: hidden;
+	@media (min-width: $screen-lg-min) {
+		.container{
+			width : 100%;
+			padding: 0;
+		}
+	}
+	.blockquote-wrapper{
+		padding: 0 25px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		@media (min-width: $screen-sm-min) {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 24px;
+			line-height: 29px;
+			width: 682px;
+			padding: 0;
+		}
+		@media (min-width: $screen-md-min) {
+			width: 870px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			width: 100%;
+		}
+	}
+
 	blockquote{
 		text-transform : uppercase;
-		font-weight: bold;
+		font-weight: 600;
 		font-size: 15px;
 		line-height: 18px;
 		background: #eef2f5;
 		padding: 15px 20px;
 		border: none;
-		margin-bottom: 25px;
+	}
+}
+
+.pagination>li>a, .pagination>li>span{
+	border: none;
+	color: #1d1d1d;
+	&:hover,
+	&:focus{
+	    z-index: 2;
+	    color: #45bdc9;
+	    background-color: none;
+	    border-color: none;
 	}
 }

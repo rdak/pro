@@ -1,4 +1,8 @@
 @import "partials/app";
 
-@import "partials/opinion-page/opinion-header.scss";
-@import "partials/opinion-page/opinion-body.scss";
+@import "partials/opinion-page/opinion-header";
+@import "partials/comment";
+@import "partials/opinion-page/opinion-body";
+
+@import "partials/articleCommon";
+@import "partials/articleSmall";

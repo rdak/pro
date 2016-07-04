@@ -82,7 +82,7 @@
 			}
 			.title{
 				@media (min-width: $screen-sm-min) {
-					width: 680px;
+					width: 682px;
 				}
 				@media (min-width: $screen-md-min) {
 					width: 100%;
@@ -92,14 +92,14 @@
 				line-height: 36px;
 				margin-bottom: 5px;
 				text-transform: uppercase;
-				font-weight: 600;
+				font-weight: 800;
 				margin-left: auto;
 				margin-right: auto;
 			}
 			.description{
 				@media (min-width: $screen-sm-min) {
 					margin-bottom: 15px;
-					width: 680px;
+					width: 682px;
 				}
 				@media (min-width: $screen-md-min) {
 					width: 100%;
@@ -111,9 +111,8 @@
 				margin-right: auto;
 			}
 			.author{
-				
 				@media (min-width: $screen-sm-min) {
-					width: 680px;
+					width: 682px;
 				}
 
 				@media (min-width: $screen-md-min) {
@@ -124,6 +123,7 @@
 				letter-spacing: 1px;
 				font-size: 12px;
 				line-height: 15px;
+				font-weight: 600;
 				margin-left: auto;
 				margin-right: auto;
 			}

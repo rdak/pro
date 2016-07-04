@@ -31,10 +31,12 @@
 		.info{
 			overflow: hidden;
 		}
+
 		&:before{
 			content : '“';
 			color: #45bdc9;
 			font-size: 72px;
+			line-height: 62px;
 			width: 45px;
 			margin-right: 5px;
 			font-weight: 900;

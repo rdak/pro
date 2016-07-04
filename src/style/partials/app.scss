@@ -76,23 +76,24 @@ strong{
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 600;
-
 	margin-bottom: 15px;
-
 	padding: 0 25px;
 	margin-left: auto;
 	margin-right: auto;
+	@media (min-width: 420px) and (max-width: $screen-sm-min) {
+		text-align: center;
+	}
 	@media (min-width: $screen-sm-min) {
 		font-size: 24px;
 		line-height: 29px;
-		width: 680px;
+		width: 682px;
 		padding: 0;
 	}
 	@media (min-width: $screen-md-min) {
 		width: 870px;
 	}
 
-	@media (min-width: $screen-md-min) {
+	@media (min-width: $screen-lg-min) {
 		width: 100%;
 	}
 
@@ -103,6 +104,7 @@ strong{
 
 .adphoto{
 	padding-bottom: 10px;
+	max-width: 100%;
 	@media(min-width: $screen-lg-min){
 		display: block;
 	}
@@ -146,8 +148,10 @@ strong{
 	}
 	font-size: 15px;
 	line-height: 20px;
+	letter-spacing: 1.3px;
 	padding : 20px 30px;
 	display: inline-block;
+	font-weight: 600;
 	position: relative;
 	-webkit-transition: .5s cubic-bezier(0.785,.135,.15,.86);
 	transition: .5s cubic-bezier(0.785,.135,.15,.86);
@@ -282,30 +286,30 @@ a.btn-hover {
 	}
 }
 
-.container{
-	//padding: 0 25px;
-	@media (min-width: $screen-md-min){
-		padding: 0 15px;
-	}
-}
-
 @media (max-width: $screen-sm-min){
-	.container.full-sm{
+	.container.full-sm,
+	.container-fluid.full-sm{
 		width: 100%;
 		padding: 0;
+		> .row{
+			margin: 0;
+		}
 	}
 }
 
 @media (max-width: $screen-md-min) {
 	.container.full-sm{
 	    width: 100%;
-	    max-width: 870px;
 		padding: 0;
-		overflow: hidden;
+	    /* max-width: 870px;
+		overflow: hidden; */
 		.title-section{
 			@media (min-width: $screen-md-min) {
 				width: 100%;
 			}
+		}
+		.row{
+			margin:0;
 		}
 	}
 
@@ -320,7 +324,7 @@ a.btn-hover {
 	}
 }
 
-body {
+
 	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
 		padding: 0;
 		@media (min-width: $screen-sm-min) {
@@ -329,7 +333,8 @@ body {
 		}
 
 	}
-	.container{
+	.container,
+	.container-fluid{
 		padding-left: 25px;
 		padding-right: 25px;
 		@media (min-width: $screen-sm-min) {
@@ -345,7 +350,7 @@ body {
 		    margin-right: -15px;
 		}
 	}
-}
+
 
 #navbar .nav.navbar-nav.submenu{
 	@media (min-width: $screen-lg-min) {
@@ -372,4 +377,19 @@ svg{
 
 .ad{
 	text-align: center;
+}
+
+.rightSiteBar{
+	margin-top: 80px;
+	@media (min-width: $screen-sm-min) {
+		
+	}
+	@media (min-width: $screen-md-min) {
+		margin-top: 65px;
+		width: 900px;
+	}
+	@media (min-width: $screen-lg-min) {
+		margin-top: 30px;
+		width: 100%;
+	}
 }

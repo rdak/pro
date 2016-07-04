@@ -1,5 +1,7 @@
 @import "partials/app";
 
-@import "partials/news-page/newsList-header.scss";
-@import "partials/news-page/newsList-body.scss";
-
+@import "partials/news-page/news-header";
+@import "partials/comment";
+@import "partials/news-page/news-body";
+@import "partials/articleCommon";
+@import "partials/articleSmall";
