@@ -28,18 +28,19 @@
 		color: #fff;
 		letter-spacing: 1.4px;
 		padding: 0 15px;
-    	margin: 10px -15px;
+    	margin: 5px -15px;
 		display: block;
 		font-size: 20px;
-		line-height: 1.4;
+		line-height: 25px;
     	font-family: Brandon;
 	}
-	ul{
+	.navigation{
 		padding: 0;
 		margin: 0;
 		font-size: 12px;
 		line-height: 15px;
 		font-weight: bold;
+		display: inline-block;
 		li {
 			padding: 10px 0;			
 			text-align: center;
@@ -57,6 +58,47 @@
 		}
 	}
 
+	.social{
+		text-align: right;
+		display: inline-block;
+		@media (min-width: $screen-sm-min) {
+			display: block;
+		}
+		a {
+			display: inline-block;
+			outline: none;
+			float: right;
+			opacity: 1;
+			padding: 0 5px;
+			@media (min-width: $screen-sm-min) {
+				margin-left: 10px;
+				padding: 0;
+			}
+			&:hover{
+				opacity: 0.7;
+			}
+		}
+		.svg.svg-sircle-vk{
+			background-image: url(/svg/vk-footer.svg);
+		}
+
+		.svg.svg-sircle-fb{
+			background-image: url(/svg/fb-footer.svg);
+		}
+
+		.svg.svg-sircle-tw{
+			background-image: url(/svg/twitter-footer.svg);
+		}
+
+		.svg.svg-sircle-vk,
+		.svg.svg-sircle-fb,
+		.svg.svg-sircle-tw{
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+		}
+	}
+
 	.copyright{
 		@media (max-width: $screen-sm-min) {
 			float: right;
@@ -66,6 +108,12 @@
 		@media (max-width: $screen-sm-min) {
 			.text-right {
 				text-align: center;
+			}
+		}
+		a{
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
 			}
 		}
 	}

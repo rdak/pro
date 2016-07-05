@@ -21,6 +21,7 @@
 			.opinion-name{
 				font-size: 24px;
 				line-height: 30px;
+				margin-bottom: 30px;
 				@media (min-width: $screen-sm-min) {
 
 				}
@@ -32,13 +33,18 @@
 					font-size: 36px;
 					line-height: 44px;
 				}
-				margin-bottom: 5px;
 			}
 			.opinion-date{
 				font-size: 12px;
-				line-height: 36px;
+				line-height: 15px;
 				letter-spacing: 1px;
+				margin: 0 0 10px 0;
+				font-weight: 600;
 			}
 		}
+	}
+	svg,
+	.fa{
+		margin-left: 15px;
 	}
 }

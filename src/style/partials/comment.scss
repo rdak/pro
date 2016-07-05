@@ -17,7 +17,7 @@
 	
 	.comment-body{
 		overflow: hidden;
-        
+        line-height: 1;
 	    @media (min-width: $screen-md-min) {
 		    width: 200px;
 		}
@@ -33,9 +33,11 @@
 		display: inline-block;
 		font-size: 15px;
 		line-height: 1;
+		vertical-align: top;
 		letter-spacing: 1px;
 		font-weight : 600;
-		margin-bottom: 3px;
+		margin-top: -1px;
+		margin-bottom: 5px;
 	}
 	.comment-content{
 		display: inline-block;
@@ -48,5 +50,6 @@
 		font-size: 12px;
 		line-height: 1;
 		letter-spacing: 1px;
+		margin: 0;
 	}
 }

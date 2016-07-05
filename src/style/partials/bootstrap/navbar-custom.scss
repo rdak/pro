@@ -230,7 +230,7 @@
 
 .navbar-inverse {
   .js-scroll &{
-    background: rgba(69, 189, 201, 0.9);
+    background: rgba(0, 0, 0, 0.9);
   }
   background-color: $navbar-inverse-bg;
 
@@ -271,3 +271,18 @@
   }
 }
 
+@media (max-width: $screen-sm-min) {
+  .navbar-toggle.collapsed + .nav + .nav{
+      display: none;
+  }
+  .submenu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    li{
+      float: none !important;
+    }
+  }
+}

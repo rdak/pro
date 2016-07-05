@@ -116,6 +116,7 @@ strong{
 	.tag-item{
 		font-size: 12px;
 		line-height: 15px;
+		font-weight: 600;
 		letter-spacing: 1px;
 		color: #1d1d1d;
 		margin-right: 10px;
@@ -134,6 +135,9 @@ strong{
 		&.article-opinion{
 			color: #fff;
 			background: #45bdc9;
+		}
+		&:hover{
+			background: rgba(54, 188, 164, 0.15);
 		}
 	}
 }
@@ -368,13 +372,6 @@ svg{
 	vertical-align: middle;
 }
 
-
-.lang, .login{
-	@media (max-width: $screen-sm-min) {
-		display: none !important;
-	}
-}
-
 .ad{
 	text-align: center;
 }
@@ -393,3 +390,33 @@ svg{
 		width: 100%;
 	}
 }
+
+.pagination>li.active>a,
+.pagination>li.active>span{
+	&,
+	&:hover,
+	&:focus{
+		background: none;
+		border: none;
+		color: #2da1ad;
+	}
+}
+
+.pagination>li>a, .pagination>li>span{
+	border: none;
+	color: #1d1d1d;
+	font-size: 15px;
+	line-height: 1.6;
+	font-weight: 600;
+	&.active,
+	&:hover,
+	&:focus{
+	    z-index: 2;
+	    color: #2da1ad;
+	    outline: none;
+	    background: none;
+	    border: none;
+	}
+}
+
+

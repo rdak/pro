@@ -40,14 +40,3 @@
 	}
 }
 
-.pagination>li>a, .pagination>li>span{
-	border: none;
-	color: #1d1d1d;
-	&:hover,
-	&:focus{
-	    z-index: 2;
-	    color: #45bdc9;
-	    background-color: none;
-	    border-color: none;
-	}
-}

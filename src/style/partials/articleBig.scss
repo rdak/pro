@@ -60,14 +60,14 @@
 			right: 0;
 			margin: auto;
 			z-index: 3;
-			padding: 10px 25px;
+			padding: 10px 15px;
 			@media (min-width: $screen-sm-min) {
 				bottom: -40px;
-				padding: 25px 25px;
+				padding: 25px 15px;
 			}
   			
 			@media (min-width: $screen-md-min) {
-				padding: 25px 30px;
+				padding: 25px 15px;
 				width: 740px;
 			}
 
