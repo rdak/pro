@@ -1,0 +1,26 @@
+.reply-block .reply,
+.wysiwyg-block{
+	.btn-readmore{
+		margin-right: 25px;
+		vertical-align: middle;
+	}
+
+	@media (max-width: $screen-sm-min) {
+		text-align: center;
+		.btn-readmore{
+			margin: 0 0 5px 0;
+			& + span{
+				display: block;
+			}
+		}
+	}
+}
+
+.wysiwyg-block{
+	.wysiwyg{
+		margin: 35px 0 20px 0px;
+		padding: 10px;
+		background-color: #eef2f5;
+	}
+	overflow: hidden;
+}

@@ -32,6 +32,13 @@
 
 .conversation-wrapper{
 	margin-bottom: 35px;
+	>.row > .col-xs-12{
+		padding:0;
+		@media (min-width: $screen-md-min) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
 	@media (min-width: $screen-sm-min) {
 		margin-top: 40px;
 		margin-bottom: 5px;
@@ -84,6 +91,13 @@
 
 .opinion-wrapper{
 	margin-bottom: 35px;
+	>.row >.col-xs-12{
+		padding:0;
+		@media (min-width: $screen-md-min) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
 	@media (min-width: $screen-sm-min) {
 		margin-bottom: 25px;
 	}

@@ -5449,6 +5449,12 @@ svg {
 
 .conversation-wrapper {
   margin-bottom: 35px; }
+  .conversation-wrapper > .row > .col-xs-12 {
+    padding: 0; }
+    @media (min-width: 1024px) {
+      .conversation-wrapper > .row > .col-xs-12 {
+        padding-left: 15px;
+        padding-right: 15px; } }
   @media (min-width: 768px) {
     .conversation-wrapper {
       margin-top: 40px;
@@ -5487,6 +5493,12 @@ svg {
 
 .opinion-wrapper {
   margin-bottom: 35px; }
+  .opinion-wrapper > .row > .col-xs-12 {
+    padding: 0; }
+    @media (min-width: 1024px) {
+      .opinion-wrapper > .row > .col-xs-12 {
+        padding-left: 15px;
+        padding-right: 15px; } }
   @media (min-width: 768px) {
     .opinion-wrapper {
       margin-bottom: 25px; } }

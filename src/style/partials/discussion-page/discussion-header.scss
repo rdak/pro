@@ -1,11 +1,53 @@
-.discussionList-header{
+.discussion-header{
 	background: #45bdc9;
-	padding: 145px 0 75px 0;
-	text-transform : uppercase;
+	padding: 130px 0 25px 0;
+	@media (min-width: $screen-sm-min) {
+		padding-bottom: 65px;
+	}
+	@media (min-width: $screen-md-min) {
+		padding-bottom: 25px;
+	}
+
 	color: #fff;
+	margin-bottom: 20px;
+	.img-wrapper{
+		float: left;
+		margin-right: 20px;
+	}
 	.name{
-		font-weight: bold;
-		font-size: 36px;
-		line-height: 44px;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0;
+		p{
+			margin: 0;
+			padding: 5px 15px;
+			@media (min-width: $screen-sm-min) {
+				padding: 15px;
+			}
+		}
+		margin-bottom: 60px;
+		@media (min-width: $screen-sm-min) {
+			margin-bottom: 30px;
+		}
+		@media (min-width: $screen-lg-min) {
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 44px;
+		}
+	}
+
+	.author{
+		overflow: hidden;
+		width: 100%;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 1px;
+		margin : 0;
+	}
+	
+	svg,
+	.fa{
+		margin-left: 15px;
 	}
 }
