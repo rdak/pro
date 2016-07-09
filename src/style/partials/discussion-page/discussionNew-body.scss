@@ -1,3 +1,40 @@
+.form-wrapper {
+	.label{
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		margin-bottom: 15px;
+		padding: 0;
+		color: #1d1d1d;
+		text-transform: uppercase;
+		display: block;
+		text-align: left;		
+	}
+	
+	.field-wrapper{
+		margin-bottom: 15px;
+	}
+
+	.input-wrapper{
+		background: #eef2f5;
+		padding: 10px;
+	}
+
+	input,
+	textarea{
+		width: 100%;
+		padding: 10px 15px;
+		border: none;
+		outline: none;
+	}
+
+	.title input{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
 .reply-block .reply,
 .wysiwyg-block{
 	.btn-readmore{
@@ -18,9 +55,16 @@
 
 .wysiwyg-block{
 	.wysiwyg{
-		margin: 35px 0 20px 0px;
+		margin: 0px 0 20px 0px;
 		padding: 10px;
 		background-color: #eef2f5;
 	}
 	overflow: hidden;
+}
+
+.discussionNew{
+	@media (min-width: 1380px){
+		padding: 0;
+		width: 100%;
+	}
 }

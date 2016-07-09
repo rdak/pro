@@ -1,0 +1,164 @@
+.title-section{
+	overflow: hidden;
+	.page-body &{
+		margin: 0 -25px;
+		@media (min-width: $screen-sm-min) {
+			margin: 0 -15px;
+		}
+	}
+}
+
+.rightSiteBar{
+	@media (max-width: $screen-lg-min) {
+			display: none;
+	}
+}
+
+.page-body{
+	ul{
+		overflow: hidden;
+		margin-left: -20px;
+		li{
+			float: left;
+			a{
+				padding: 20px;
+				display: block;
+				font-size: 15px;
+				line-height: 24px;
+				color: #949494;
+				&:hover,
+				&:active{
+					text-decoration: none;
+					color: #45bdc9;
+				}
+			}
+			&.active{
+				a{
+					position: relative;
+					color: #45bdc9;
+					&:after{
+						position: absolute;
+						font-family: FontAwesome;
+						display: inline-block;
+						content: "\f0d7";
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.discussion-item-full{
+	padding: 25px 0;
+	background: #fff;
+	border-bottom: 10px solid #eef2f5;
+	&:last-child{
+		border-bottom: 0;
+	}
+	.container.full-sm & .row{
+		@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+		    width: 712px;
+		    padding-left: 0;
+		    padding-right: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+	}
+	
+	.col-md-9{
+		@media (max-width: $screen-sm-min) {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	@media (min-width: $screen-md-min) {
+		width: 100%;
+		padding: 25px 0px;
+	}
+
+	.discussion-title{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: bold;
+		margin: 0;
+		color: #1d1d1d;
+	}
+
+	.discussion-author,
+	.discussion-comments,
+	.discussion-date{
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #949494;
+		margin: 0;
+	}
+}
+
+.personal-comment-list{
+	.personal-comment-item{
+		padding: 10px 0;
+		background: #fff;
+		border-bottom: 10px solid #eef2f5;
+		&:last-child{
+			border-bottom: 0;
+		}
+	}
+
+	.personal-comment-body{
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.personal-comment-descirption,
+	.personal-comment-date{
+		margin-bottom: 0;
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #949494;
+	}
+}
+
+.personal-material-list{
+	.personal-material{
+		padding: 10px 0;
+		background: #fff;
+		border-bottom: 10px solid #eef2f5;
+		&:last-child{
+			border-bottom: 0;
+		}
+	}
+
+	.personal-material-title{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: bold;
+	}
+
+	.personal-material-body{
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.personal-material-descirption,
+	.personal-material-date{
+		margin-bottom: 0;
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #949494;
+	}
+}

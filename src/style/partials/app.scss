@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: Proxima;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -61,6 +62,8 @@ table {
 
 a{
 	color: $brand-base;
+	-webkit-transition: color linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
+    transition: color linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
 	&:focus,
 	&:hover{
 		text-decoration: none;
@@ -104,7 +107,7 @@ strong{
 
 .adphoto{
 	padding-bottom: 10px;
-	max-width: 100%;
+	width: 100%;
 	@media(min-width: $screen-lg-min){
 		display: block;
 	}
@@ -124,22 +127,30 @@ strong{
 		float: left;
 		padding: 5px 10px;
 		background: rgba(54, 188, 164, 0.3);
-		&.article-article{
-			color: #fff;
-			background: #a13a78;
-		}
-		&.article-news{
-			color: #fff;
-			background: #37bca5;
-		}
-		&.article-opinion{
-			color: #fff;
-			background: #45bdc9;
-		}
 		&:hover{
 			background: rgba(54, 188, 164, 0.15);
 		}
+		&.tag-article{
+			color: #fff;
+			background: #a13a78;
+			&:hover{
+				background: rgba(54, 188, 164, 0.15);
+			}
+		}
+		&.tag-news{
+			color: #fff;
+			background: #37bca5;
+		}
+		&.tag-opinion{
+			color: #fff;
+			background: #45bdc9;
+		}
+		
 	}
+}
+
+.showmore{
+	margin-top: 30px;
 }
 
 .btn-readmore{
@@ -386,7 +397,7 @@ svg{
 		width: 900px;
 	}
 	@media (min-width: $screen-lg-min) {
-		margin-top: 30px;
+		margin-top: 0px;
 		width: 100%;
 	}
 }

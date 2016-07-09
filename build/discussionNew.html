@@ -6,7 +6,7 @@
     <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
     <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/discussionNew.css">
-    <script src="js/main.js"></script>
+    <script src="js/article.js"></script>
     <title>discussionNew</title>
 </head>
 <body>
@@ -43,13 +43,28 @@
       </div>
     </nav>
 
-    
+    <div class="discussionNew-header">
+    	<div class="container">
+    		<div class="info">
+    			<h1 class="name">
+    				НОВОЕ ОБСУЖДЕНИЕ
+    			</h1>
+    		</div>
+    	</div>
+    </div>
     <div class="container full">
     	<div class="row">
     		<div class="col-lg-8 col-sm-12 col-xs-12">
     			<div class="container discussionNew">
-    				<div class="discussionNew-form">
+    				<div class="discussionNew-form form-wrapper">
+    					<div class="field-wrapper title">
+    						<p class="label">ЗАГОЛОВОК</p>
+    						<div class="input-wrapper">
+    							<input type="text">
+    						</div>
+    					</div>
     					<div class="wysiwyg-block">
+    						<p class="label">Содержание</p>
     						<div class="wysiwyg">
     							<textarea class="js-cleditor"></textarea>
     						</div>

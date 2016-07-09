@@ -1,0 +1,62 @@
+.common-header{
+	background: #eef2f5;
+	color: #1d1d1d;
+	
+	
+	padding: 115px 0 0px 0;
+	height: 260px;
+	margin-bottom: 30px;
+	&.review-header{
+		background: #4f547f;
+		color: #fff;
+	}
+
+	.name{
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0 0 10px 0;
+		font-weight: 800;
+		text-transform : uppercase;
+		@media (min-width: $screen-sm-min) {
+
+		}
+		@media (min-width: $screen-md-min) {
+
+		}
+		@media (min-width: $screen-lg-min) {
+			font-size: 36px;
+			line-height: 44px;
+		}
+	}
+
+	.description{
+		font-size: 15px;
+		line-height: 18px;
+		margin-bottom: 25px;
+		@media (min-width: $screen-sm-min) {
+
+		}
+		@media (min-width: $screen-md-min) {
+
+		}
+		@media (min-width: $screen-lg-min) {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	.author{
+		text-transform : uppercase;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 1px;
+		margin : 0 0 10px 0;
+		
+	}
+	
+	svg,
+	.fa{
+		margin-left: 15px;
+	}
+}

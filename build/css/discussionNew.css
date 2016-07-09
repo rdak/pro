@@ -5151,7 +5151,9 @@ button.close {
 /* Variables */
 /* Variables */
 a {
-  color: #1d1d1d; }
+  color: #1d1d1d;
+  -webkit-transition: color linear .3s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .3s;
+  transition: color linear .3s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .3s; }
   a:focus, a:hover {
     text-decoration: none;
     color: #2da1ad; }
@@ -5187,7 +5189,7 @@ strong {
 
 .adphoto {
   padding-bottom: 10px;
-  max-width: 100%; }
+  width: 100%; }
   @media (min-width: 1380px) {
     .adphoto {
       display: block; } }
@@ -5206,17 +5208,22 @@ strong {
     float: left;
     padding: 5px 10px;
     background: rgba(54, 188, 164, 0.3); }
-    .section-tag-list .tag-item.article-article {
-      color: #fff;
-      background: #a13a78; }
-    .section-tag-list .tag-item.article-news {
-      color: #fff;
-      background: #37bca5; }
-    .section-tag-list .tag-item.article-opinion {
-      color: #fff;
-      background: #45bdc9; }
     .section-tag-list .tag-item:hover {
       background: rgba(54, 188, 164, 0.15); }
+    .section-tag-list .tag-item.tag-article {
+      color: #fff;
+      background: #a13a78; }
+      .section-tag-list .tag-item.tag-article:hover {
+        background: rgba(54, 188, 164, 0.15); }
+    .section-tag-list .tag-item.tag-news {
+      color: #fff;
+      background: #37bca5; }
+    .section-tag-list .tag-item.tag-opinion {
+      color: #fff;
+      background: #45bdc9; }
+
+.showmore {
+  margin-top: 30px; }
 
 .btn-readmore {
   color: #fff;
@@ -5395,7 +5402,7 @@ svg {
       width: 900px; } }
   @media (min-width: 1380px) {
     .rightSiteBar {
-      margin-top: 30px;
+      margin-top: 0px;
       width: 100%; } }
 
 .pagination > li.active > a, .pagination > li.active > a:hover, .pagination > li.active > a:focus, .pagination > li.active > span, .pagination > li.active > span:hover, .pagination > li.active > span:focus {
@@ -5417,18 +5424,45 @@ svg {
     border: none; }
 
 .discussionNew-header {
-  background: #a13a78;
+  background: #45bdc9;
+  text-transform: uppercase;
   padding: 145px 0 80px 0;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 35px; }
   .discussionNew-header .name {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-weight: 800; }
     @media (min-width: 1380px) {
       .discussionNew-header .name {
-        font-weight: 800;
         font-size: 36px;
         line-height: 44px; } }
+
+.form-wrapper .label {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  padding: 0;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  display: block;
+  text-align: left; }
+.form-wrapper .field-wrapper {
+  margin-bottom: 15px; }
+.form-wrapper .input-wrapper {
+  background: #eef2f5;
+  padding: 10px; }
+.form-wrapper input, .form-wrapper textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  outline: none; }
+.form-wrapper .title input {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px; }
 
 .reply-block .reply .btn-readmore, .wysiwyg-block .btn-readmore {
   margin-right: 25px;
@@ -5444,6 +5478,11 @@ svg {
 .wysiwyg-block {
   overflow: hidden; }
   .wysiwyg-block .wysiwyg {
-    margin: 35px 0 20px 0px;
+    margin: 0px 0 20px 0px;
     padding: 10px;
     background-color: #eef2f5; }
+
+@media (min-width: 1380px) {
+  .discussionNew {
+    padding: 0;
+    width: 100%; } }
