@@ -1,9 +1,18 @@
 .opinion-header{
-	background: #45bdc9;
-	padding: 135px 0 15px 0;
-	text-transform : uppercase;
-	color: #fff;
+	&.common-header{
+		padding: 130px 0 0 0;
+	}
+
 	.opinion-block{
+		.info{
+			margin-top: 10px;
+		}
+		.name {
+			margin-bottom: 40px;
+		}
+		.date{
+			margin: 0;
+		}
 		&:before{
 			content : '“';
 			font-size: 72px;
@@ -17,34 +26,5 @@
 			    width: 45px;
 			}
 		}
-		.info{
-			.opinion-name{
-				font-size: 24px;
-				line-height: 30px;
-				margin-bottom: 30px;
-				font-weight: 800;
-				@media (min-width: $screen-sm-min) {
-
-				}
-				@media (min-width: $screen-md-min) {
-
-				}
-				@media (min-width: $screen-lg-min) {
-					font-size: 36px;
-					line-height: 44px;
-				}
-			}
-			.opinion-date{
-				font-size: 12px;
-				line-height: 15px;
-				letter-spacing: 1px;
-				margin: 0 0 10px 0;
-				font-weight: 600;
-			}
-		}
-	}
-	svg,
-	.fa{
-		margin-left: 15px;
 	}
 }

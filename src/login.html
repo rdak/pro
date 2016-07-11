@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
+    <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/main.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <a class="logo-brand" href="/"><strong>PRO</strong>INTELLEKT</a>
+    <div class="form-wrapper">
+        <div class="login">
+            <ul role="tablist" class="auth_login_menu_links">
+                <li class="login active">
+                    <a role="tab" data-toggle="tab" href="#login">Войти</a>
+                </li>
+                <li class="signup">
+                    <a role="tab" data-toggle="tab" href="#signup">Регистрация</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="login">
+                        <p class="">через аккаунт в социальных сетях</p>
+                        <div class="social">
+                            <a href="#" target="_blank"><i class="svg svg-sircle-tw"></i></a>
+                            <a href="#" target="_blank"><i class="svg svg-sircle-fb"></i></a>
+                            <a href="#" target="_blank"><i class="svg svg-sircle-vk"></i></a>
+                        </div>
+                        <p class="">или</p>
+                        <form action="">
+                            <div class="field-wrapper">
+                                <input class="field" type="text" name="name" placeholder="Имя">
+                            </div>
+                            <div class="field-wrapper">
+                                <input class="field" type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="field-wrapper">
+                                <input class="field" type="password" name="password" placeholder="Пароль">
+                            </div>
+                            <label class="btn-readmore">
+                                Регистрация
+                                <input type="submit" class="hide" value="Регистрация">
+                            </label>
+                        </form>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="signup">
+                        <p class="">через аккаунт в социальных сетях</p>
+                        <div class="social">
+                            <a href="#" target="_blank"><i class="svg svg-sircle-tw"></i></a>
+                            <a href="#" target="_blank"><i class="svg svg-sircle-fb"></i></a>
+                            <a href="#" target="_blank"><i class="svg svg-sircle-vk"></i></a>
+                        </div>
+                        <p class="">или</p>
+                        <form action="">
+                            <div class="field-wrapper">
+                                <input class="field" type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="field-wrapper">
+                                <input class="field" type="password" name="password" placeholder="Пароль">
+                            </div>
+                            <label class="btn-readmore">
+                                Войти
+                                <input type="submit" class="hide" value="Войти">
+                            </label>
+                        </form>
+                        <a href="#" class="">Восстановить пароль</a>
+                </div>
+            </div>
+        </div>
+        <div class="restore">
+            <p class="">Восстановить пароль</p>
+            <form action="">
+                <div class="field-wrapper">
+                    <input class="field" type="text" name="email" placeholder="Email">
+                </div>
+                <label class="btn-readmore">
+                    ВОССТАНОВИТЬ ПАРОЛЬ
+                    <input type="submit" class="hide" value="ВОССТАНОВИТЬ ПАРОЛЬ">
+                </label>
+            </form>
+            <a href="#" class=""> ←  Назад</a>
+        </div>
+    </div>
+</body>
+</html>

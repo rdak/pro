@@ -2,17 +2,24 @@
 	<div class="row">
 		<div class="col-lg-8 col-xs-12">
 			<div class="container page-body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod maxime nobis ipsam ipsum harum sed dicta, voluptates, omnis, alias optio blanditiis sequi sint, distinctio nemo itaque neque illo non. Ab repudiandae, doloribus cum voluptate porro, nemo libero ullam qui facilis, nostrum dolore, blanditiis vel corporis nulla repellat. Nam sequi repellendus voluptatem quod doloremque accusantium molestias vitae commodi, quam, sed aut dolore velit fugit nulla perferendis expedita delectus eos iste, dolor earum reiciendis debitis, quidem dolores provident! Aut perferendis fugit, sequi iusto temporibus sit eligendi, repellat natus dolorum, molestiae placeat dolorem soluta suscipit ab itaque expedita modi enim, distinctio asperiores ducimus.</p>
+				<div class="person-info">
+					<p>
+						Мария Александровна Скрягина родилась 31 декабря 1977 года в городе Омске.<br><br>
+						В 1999 закончила факультет «Теологии и мировых культур» ОмГУ, образование высшее, специальность – теолог. В последующем училась и работала в сфере информационной и просветительской деятельности в Москве, Минске, Омске, Нюрнберге. Живёт в Москве.<br><br>
+						Публиковалась как прозаик и критик (журнал «Органон», «Дети Ра», газетах «НГ-exlibris», «Литературная Россия»; рецензия на роман Дениса Гуцко «Без пути-следа» опубликована в итальянском ежегодном академическом журнале «Intralinea» (2010)).<br><br>
+						Лауреат омской областной премии имени Ф.М. Достоевского, конкурса Союза писателей России «Русская тема», дипломант Шестого литературного Волошинского конкурса.
+					</p>
+				</div>
 			</div>
 			<div class="container page-body">
-				<ul role="tablist">
+				<ul class="tabList" role="tablist">
 					<li class="active"><a href="#articles" role="tab" data-toggle="tab">Материалы 10</a></li>
 					<li><a href="#books" role="tab" data-toggle="tab">Книги 5</a></li>
 					<li><a href="#conversaions" role="tab" data-toggle="tab">Обсуждения 13</a></li>
 					<li><a href="#comments" role="tab" data-toggle="tab">Комментарии 33</a></li>
 				</ul>
 				<div class="tab-content">
-				    <div role="tabpanel" class="tab-pane active" id="articles">
+				    <div role="tabpanel" class="tab-pane fade in active" id="articles">
 				    	<div class="personal-material-list">
 							//= ../personal-page/personal-material.html
 							//= ../personal-page/personal-material.html
@@ -21,8 +28,15 @@
 							//= ../personal-page/personal-material.html
 						</div>
 				    </div>
-				    <div role="tabpanel" class="tab-pane " id="books">...</div>
-				    <div role="tabpanel" class="tab-pane " id="conversaions">
+				    <div role="tabpanel" class="tab-pane fade" id="books">
+					    <div class="personal-material-list">
+					    	//= ../personal-page/personal-book.html
+					    	//= ../personal-page/personal-book.html
+					    	//= ../personal-page/personal-book.html
+					    	//= ../personal-page/personal-book.html
+					    </div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane fade" id="conversaions">
 						<div class="discussion-list">
 							//= ../personal-page/personal-item.html
 							//= ../personal-page/personal-item.html
@@ -36,32 +50,7 @@
 							//= ../personal-page/personal-item.html
 							//= ../personal-page/personal-item.html
 						</div>
-						<div class="text-center showmore">
-							<a href="#" class="btn-readmore">ПОКАЗАТЬ ЕЩЁ</a>
-							<nav>
-							  <ul class="pagination">
-							    <li>
-							      <a href="#" aria-label="Previous">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M10.5 21l2.5-2.6-8-8 8-7.8L10.5 0 0 10.5l3 3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							    <li class="active"><a href="#">1</a></li>
-							    <li><a href="#">2</a></li>
-							    <li><a href="#">3</a></li>
-							    <li><a href="#">4</a></li>
-							    <li><a href="#">5</a></li>
-							    <li>
-							      <a href="#" aria-label="Next">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M2.5 0L0 2.6l8 8-8 7.8L2.5 21 13 10.5l-3-3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							  </ul>
-							</nav>
-						</div>
+						//= ../pagination.html
 				    </div>
 				    <div role="tabpanel" class="tab-pane " id="comments">
 				    	<div class="personal-comment-list">
@@ -71,35 +60,9 @@
 							//= ../personal-page/personal-comment-item.html
 							//= ../personal-page/personal-comment-item.html
 						</div>
-						<div class="text-center showmore">
-							<a href="#" class="btn-readmore">ПОКАЗАТЬ ЕЩЁ</a>
-							<nav>
-							  <ul class="pagination">
-							    <li>
-							      <a href="#" aria-label="Previous">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M10.5 21l2.5-2.6-8-8 8-7.8L10.5 0 0 10.5l3 3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							    <li class="active"><a href="#">1</a></li>
-							    <li><a href="#">2</a></li>
-							    <li><a href="#">3</a></li>
-							    <li><a href="#">4</a></li>
-							    <li><a href="#">5</a></li>
-							    <li>
-							      <a href="#" aria-label="Next">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M2.5 0L0 2.6l8 8-8 7.8L2.5 21 13 10.5l-3-3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							  </ul>
-							</nav>
-						</div>
+						//= ../pagination.html
 				    </div>
-				</div>
-				
+				</div>				
 			</div>
 		</div>
 		<div class="col-lg-4 col-xs-12">

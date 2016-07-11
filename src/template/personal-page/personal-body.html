@@ -3,12 +3,12 @@
 		<div class="col-lg-8 col-xs-12">
 
 			<div class="container page-body">
-				<ul role="tablist">
+				<ul class="tabList" role="tablist">
 					<li class="active"><a href="#conversaions" role="tab" data-toggle="tab">Обсуждения 13</a></li>
 					<li><a href="#comments" role="tab" data-toggle="tab">Комментарии 33</a></li>
 				</ul>
 				<div class="tab-content">
-				    <div role="tabpanel" class="tab-pane active" id="conversaions">
+				    <div role="tabpanel" class="tab-pane fade in active" id="conversaions">
 						<div class="discussion-list">
 							//= ../personal-page/personal-item.html
 							//= ../personal-page/personal-item.html
@@ -22,34 +22,9 @@
 							//= ../personal-page/personal-item.html
 							//= ../personal-page/personal-item.html
 						</div>
-						<div class="text-center showmore">
-							<a href="#" class="btn-readmore">ПОКАЗАТЬ ЕЩЁ</a>
-							<nav>
-							  <ul class="pagination">
-							    <li>
-							      <a href="#" aria-label="Previous">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M10.5 21l2.5-2.6-8-8 8-7.8L10.5 0 0 10.5l3 3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							    <li class="active"><a href="#">1</a></li>
-							    <li><a href="#">2</a></li>
-							    <li><a href="#">3</a></li>
-							    <li><a href="#">4</a></li>
-							    <li><a href="#">5</a></li>
-							    <li>
-							      <a href="#" aria-label="Next">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M2.5 0L0 2.6l8 8-8 7.8L2.5 21 13 10.5l-3-3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							  </ul>
-							</nav>
-						</div>
+						//= ../pagination.html
 				    </div>
-				    <div role="tabpanel" class="tab-pane" id="comments">
+				    <div role="tabpanel" class="tab-pane fade" id="comments">
 				    	<div class="personal-comment-list">
 							//= ../personal-page/personal-comment-item.html
 							//= ../personal-page/personal-comment-item.html
@@ -57,32 +32,7 @@
 							//= ../personal-page/personal-comment-item.html
 							//= ../personal-page/personal-comment-item.html
 						</div>
-						<div class="text-center showmore">
-							<a href="#" class="btn-readmore">ПОКАЗАТЬ ЕЩЁ</a>
-							<nav>
-							  <ul class="pagination">
-							    <li>
-							      <a href="#" aria-label="Previous">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M10.5 21l2.5-2.6-8-8 8-7.8L10.5 0 0 10.5l3 3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							    <li class="active"><a href="#">1</a></li>
-							    <li><a href="#">2</a></li>
-							    <li><a href="#">3</a></li>
-							    <li><a href="#">4</a></li>
-							    <li><a href="#">5</a></li>
-							    <li>
-							      <a href="#" aria-label="Next">
-							        <span aria-hidden="true">
-							        	<svg xmlns="http://www.w3.org/2000/svg" width="13" height="21"><path fill="currentColor" d="M2.5 0L0 2.6l8 8-8 7.8L2.5 21 13 10.5l-3-3"/></svg>
-							        </span>
-							      </a>
-							    </li>
-							  </ul>
-							</nav>
-						</div>
+						//= ../pagination.html
 				    </div>
 				</div>
 				

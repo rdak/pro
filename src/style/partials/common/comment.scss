@@ -13,7 +13,6 @@
 	    padding: 0;
 	}
 
-	
 	.img-wrapper{
 		float: left;
 		margin-right: 20px;
@@ -31,13 +30,20 @@
 		vertical-align: top;
 		letter-spacing: 1px;
 		font-weight : 600;
-		margin-bottom: 5px;
+		margin-bottom: 3px;
+		.replyTo{
+			margin-left: 10px;
+			color: #949494;
+			&:hover{
+				color: #45BDC9;
+			}
+		}
 	}
 	
 	.comment-content{
 		font-size: 15px;
 		line-height: 20px;
-		margin-bottom: 5px;
+		margin-bottom: 2px;
 	}
 
 	.comment-date{
@@ -47,15 +53,12 @@
 		font-weight: 600;
 		letter-spacing: 1px;
 		margin: 0;
-	}
-
-	.replyTo{
-		font-weight: bold;
-		display: inline-block;
-		margin-left: 10px;
-		color: #2DA1AD;
-		&:hover{
-			color: #45BDC9;
+		a{
+			color: #2DA1AD;
+			font-weight: bold;
+			&:hover{
+				color: #45BDC9;
+			}
 		}
 	}
 }

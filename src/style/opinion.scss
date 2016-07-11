@@ -1,8 +1,12 @@
 @import "partials/app";
 
 @import "partials/opinion-page/opinion-header";
-@import "partials/comment";
 @import "partials/opinion-page/opinion-body";
+
+@import "partials/common/header";
+@import "partials/common/body";
+@import "partials/common/comment";
+@import "partials/common/social-likes";
 
 @import "partials/articleCommon";
 @import "partials/articleSmall";

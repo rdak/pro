@@ -14,8 +14,17 @@
 	}
 }
 
+.person-info{
+	font-size: 15px;
+	line-height: 24px;
+	margin-bottom: 25px;
+	p{
+		margin: 0;
+	}
+}
+
 .page-body{
-	ul{
+	ul.tabList{
 		overflow: hidden;
 		margin-left: -20px;
 		li{
@@ -31,17 +40,24 @@
 					text-decoration: none;
 					color: #45bdc9;
 				}
+				&:after{
+					position: absolute;
+					font-family: FontAwesome;
+					display: inline-block;
+					content: "\f0d7";
+					margin-left: 5px;
+					opacity: 0;
+				}
 			}
 			&.active{
 				a{
 					position: relative;
 					color: #45bdc9;
 					&:after{
-						position: absolute;
-						font-family: FontAwesome;
-						display: inline-block;
-						content: "\f0d7";
-						margin-left: 5px;
+						
+						opacity: 1;
+						-webkit-transition: linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
+					    transition: linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
 					}
 				}
 			}
@@ -118,15 +134,33 @@
 		margin-bottom: 10px;
 	}
 
+	
+	
 	.personal-comment-descirption,
 	.personal-comment-date{
 		margin-bottom: 0;
 		font-size: 12px;
 		line-height: 24px;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+		
 		color: #949494;
+	}
+
+	.personal-comment-date{
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	.personal-comment-descirption{
+		a{
+			font-weight: 600;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		    color: #2DA1AD;
+		    &:hover,
+		    &:focus{
+		    	color: #45BDC9;
+		    }
+		}
 	}
 }
 
@@ -160,5 +194,61 @@
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		color: #949494;
+	}
+}
+
+.personal-book{
+	padding: 10px 0;
+	border-bottom: 10px solid #eef2f5;
+	&:last-child{
+		border-bottom: 0;
+	}
+	overflow: hidden;
+
+	.personal-book-image{
+		margin-bottom: 15px;
+		@media (min-width: $screen-sm-min) {
+			float: left;
+			margin-bottom: 0;
+		}
+		width: 165px;
+		margin-right: 30px;
+		img{
+
+		}
+	}
+
+	.book{
+		.personal-book-title{
+			font-size:24px;
+			line-height: 30px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.personal-book-author,
+		.personal-book-publisher,
+		.personal-book-illustrator{
+			margin: 0;
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		.personal-book-description{
+			margin: 15px 0 10px 0;
+			font-size: 15px;
+			line-height: 24px;
+		}
+		
+		a{
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+		    color: #2DA1AD;
+		    &:hover,
+		    &:focus{
+		    	color: #45BDC9;
+		    }
+		}
 	}
 }

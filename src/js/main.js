@@ -10,6 +10,7 @@
 
 //= partials/header.js
 //= partials/index.js
+//= partials/load.js
 
 //= partials/jquery.dotdotdot.js
 //= partials/articleSmall.js
