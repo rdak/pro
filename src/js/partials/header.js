@@ -7,4 +7,12 @@ $(document).ready(function(){
 			$('body').removeClass('js-scroll');	
 		}
 	});
+
+	$('.shop-block .paper').tooltip({
+		title : 'Бумажная книга'
+	});
+
+	$('.shop-block .electronic').tooltip({
+		title : 'Электронная книга'
+	});
 });

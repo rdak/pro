@@ -1,13 +1,14 @@
 $(document).ready(function () {
-	setTimeout(loader, 3000);
+	loader();
 });
 
 var loader = function(){
 	$('.loader-wrapper').animate({
 		opacity: 0
-	}, 2000, function(){
+	}, 3000, function(){
 		$('body').css({
 			'overflow' : 'visible'
 		});
+		$(this).hide();
 	});
 };

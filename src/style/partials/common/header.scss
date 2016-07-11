@@ -7,6 +7,8 @@
 		padding: 145px 0 0px 0;
 	}
 	margin-bottom: 30px;
+
+	&.book-header,
 	&.review-header{
 		background: #4f547f;
 		color: #fff;
@@ -17,12 +19,8 @@
 		color: #fff;
 	}
 
+	&.opinion-header,
 	&.discussion-header{
-		background: #45bdc9;
-		color: #fff;
-	}
-
-	&.opinion-header{
 		background: #45bdc9;
 		color: #fff;
 	}

@@ -12192,6 +12192,14 @@ $(document).ready(function(){
 			$('body').removeClass('js-scroll');	
 		}
 	});
+
+	$('.shop-block .paper').tooltip({
+		title : 'Бумажная книга'
+	});
+
+	$('.shop-block .electronic').tooltip({
+		title : 'Электронная книга'
+	});
 });
 $(document).ready(function() {
 	$(".comment-block .comment-body .comment-content ").dotdotdot({
@@ -12210,16 +12218,17 @@ $(document).ready(function() {
 	});
 });
 $(document).ready(function () {
-	setTimeout(loader, 3000);
+	loader();
 });
 
 var loader = function(){
 	$('.loader-wrapper').animate({
 		opacity: 0
-	}, 2000, function(){
+	}, 3000, function(){
 		$('body').css({
 			'overflow' : 'visible'
 		});
+		$(this).hide();
 	});
 };
 

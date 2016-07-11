@@ -8,6 +8,7 @@
  * Custom
  */
 //= partials/header.js
+//= partials/load.js
 
 //= partials/jquery.dotdotdot.js
 //= partials/articleSmall.js

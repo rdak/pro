@@ -5439,7 +5439,7 @@ body {
 
 .loader-wrapper {
   background: #a13a78;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   z-index: 10000;
@@ -5469,16 +5469,13 @@ body {
   margin-bottom: 30px; }
   .common-header.list-header {
     padding: 145px 0 0px 0; }
-  .common-header.review-header {
+  .common-header.book-header, .common-header.review-header {
     background: #4f547f;
     color: #fff; }
   .common-header.article-header {
     background: #a13a78;
     color: #fff; }
-  .common-header.discussion-header {
-    background: #45bdc9;
-    color: #fff; }
-  .common-header.opinion-header {
+  .common-header.opinion-header, .common-header.discussion-header {
     background: #45bdc9;
     color: #fff; }
   .common-header.news-header {

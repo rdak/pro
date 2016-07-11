@@ -5439,7 +5439,7 @@ body {
 
 .loader-wrapper {
   background: #a13a78;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   z-index: 10000;
@@ -5462,7 +5462,7 @@ body {
       line-height: 30px; }
 
 body {
-  background: grey;
+  background: url("/img/img-registration-bg-color.png");
   text-align: center; }
 
 .logo-brand {
