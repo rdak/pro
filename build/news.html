@@ -2,10 +2,11 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/icofont-prointellekt.css">
     <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
     <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/news.css">
+    <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
     <script src="js/news.js"></script>
     <title>news</title>
 </head>
@@ -21,12 +22,14 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <i class="icon-prointellekt icon-menu"></i>
           </button>
           <ul class="nav navbar-nav pull-right">
-            <li><a class="btn-hover search" href="#"><i class="fa fa-search"></i></a></li>
+            <li>
+              <a class="btn-hover search" href="#">
+                <i class="icon-prointellekt icon-question-user-notfound"></i>
+              </a>
+            </li>
           </ul>
           <ul class="nav navbar-nav pull-right submenu">
             <li><a class="btn-hover lang" href="#">eng</a></li>
@@ -35,6 +38,9 @@
           <a class="navbar-brand btn-hover" href="/"><strong>PRO</strong>INTELLEKT</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <i class="icon-prointellekt icon-close"></i>
+          </button>
           <ul class="nav navbar-nav">
             <li class="active"><a class="btn-hover" href="#">О проекте</a></li>
             <li><a class="btn-hover" href="#contact">КНИГИ</a></li>
@@ -59,7 +65,7 @@
     				Почему олигархи оставляют своих детей с пустыми карманами
     			</p>
     			<p class="author">
-    				СВЕТЛАНА СЕМЁНОВА, 13 МАЯ В 15:18<svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13<i class="fa fa-eye"></i> 123
+    				СВЕТЛАНА СЕМЁНОВА, 13 МАЯ В 15:18 <i class="icon-prointellekt icon-comment"></i> 13 <i class="icon-prointellekt icon-eye"></i> 123
     			</p>
     		</div>
     	</div>
@@ -67,7 +73,7 @@
     <div class="container full">
     	<div class="row">
     		<div class="col-lg-8 col-sm-12 col-xs-12">
-    			<div class="container article-body">
+    			<div class="container article-body page-body">
     				<div class="section-tag-list">
     					<a href="#" class="tag-item">РАЗУМ</a>
     					<a href="#" class="tag-item">СОЗНАНИЕ</a>
@@ -76,10 +82,19 @@
     					<a href="#" class="tag-item">АНТРОПОЛОГИЧЕСКИЙ КРИЗИС</a>
     					<a href="#" class="tag-item">СВЕРХЧЕЛОВЕК</a>
     				</div>
-    				<div class="social-likes social-likes_notext" data-url="http://landscapists.info/" data-zeroes='yes' data-counters="yes">
-    					<div class="vkontakte" title="Поделиться ссылкой во Вконтакте"></div>
-    					<div class="facebook" title="Поделиться ссылкой на Фейсбуке"></div>
-    					<div class="twitter" title="Поделиться ссылкой в Твиттере"></div>
+    				<div class="social-likes">
+    					<a href="#" class="vkontakte social-net" title="Поделиться ссылкой во Вконтакте">
+    						<i class="icon-prointellekt icon-vk-counter"></i>
+    						<span class="count-share">12</span>
+    					</a>
+    					<a href="#" class="facebook social-net" title="Поделиться ссылкой на Фейсбуке">
+    						<i class="icon-prointellekt icon-fb-counter"></i>
+    						<span class="count-share">12</span>
+    					</a>
+    					<a href="#" class="twitter social-net" title="Поделиться ссылкой в Твиттере">
+    						<i class="icon-prointellekt icon-twitter-counter"></i>
+    						<span class="count-share">12</span>
+    					</a>
     				</div>
     				<div class="article">
     					<div class="lead">
@@ -126,10 +141,19 @@
     						<a href="#">https://lenta.ru/articles/2016/05/27/billionare</a>
     					</p>
     				</div>
-    				<div class="social-likes social-likes_notext" data-url="http://landscapists.info/" data-zeroes='yes' data-counters="yes">
-    					<div class="vkontakte" title="Поделиться ссылкой во Вконтакте"></div>
-    					<div class="facebook" title="Поделиться ссылкой на Фейсбуке"></div>
-    					<div class="twitter" title="Поделиться ссылкой в Твиттере"></div>
+    				<div class="social-likes">
+    					<a href="#" class="vkontakte social-net" title="Поделиться ссылкой во Вконтакте">
+    						<i class="icon-prointellekt icon-vk-counter"></i>
+    						<span class="count-share">12</span>
+    					</a>
+    					<a href="#" class="facebook social-net" title="Поделиться ссылкой на Фейсбуке">
+    						<i class="icon-prointellekt icon-fb-counter"></i>
+    						<span class="count-share">12</span>
+    					</a>
+    					<a href="#" class="twitter social-net" title="Поделиться ссылкой в Твиттере">
+    						<i class="icon-prointellekt icon-twitter-counter"></i>
+    						<span class="count-share">12</span>
+    					</a>
     				</div>
     				<div class="section-tag-list">
     					<a href="#" class="tag-item">РАЗУМ</a>
@@ -139,14 +163,13 @@
     					<a href="#" class="tag-item">АНТРОПОЛОГИЧЕСКИЙ КРИЗИС</a>
     					<a href="#" class="tag-item">СВЕРХЧЕЛОВЕК</a>
     				</div>
-    
     				<div class="section-comment-list">
-    					<div class="title-section">Комментарии</div>
+    					<div class="title-section comment-title">Комментарии</div>
     					<div class="comment-block">
     						<div class="comment">
-    							<div class="img-wrapper">
-    								<img src="https://api.fnkr.net/testimg/70x70/1d1d1d/fff/?text=Photo">
-    							</div>
+    							<a href="#" class="img-wrapper">
+    								<img src="/img/02.png">
+    							</a>
     							<div class="comment-body">
     								<p class="comment-name">
     									Elena
@@ -162,12 +185,12 @@
     					</div>
     					<div class="comment-block comment-reply">
     						<div class="comment">
-    							<div class="img-wrapper">
-    								<img src="https://api.fnkr.net/testimg/70x70/1d1d1d/fff/?text=Photo">
-    							</div>
+    							<a href="#" class="img-wrapper">
+    								<img src="/img/01.png">
+    							</a>
     							<div class="comment-body">
     								<p class="comment-name">
-    									Elena <span class="replyTo"><i class="fa fa-external-link"></i> Алексей</span>
+    									Elena <span class="replyTo"><i class="icon-prointellekt icon-reply-comment"></i> Алексей</span>
     								</p>
     								<p class="comment-content">
     									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel reprehenderit omnis dolores corrupti voluptas modi maxime consectetur incidunt! Odit, omnis.
@@ -180,12 +203,12 @@
     					</div>
     					<div class="comment-block comment-reply">
     						<div class="comment">
-    							<div class="img-wrapper">
-    								<img src="https://api.fnkr.net/testimg/70x70/1d1d1d/fff/?text=Photo">
-    							</div>
+    							<a href="#" class="img-wrapper">
+    								<img src="/img/03.png">
+    							</a>
     							<div class="comment-body">
     								<p class="comment-name">
-    									Elena <span class="replyTo"><i class="fa fa-external-link"></i> Алексей</span>
+    									Elena <a href="#" class="replyTo"><i class="icon-prointellekt icon-reply-comment"></i> Алексей</a>
     								</p>
     								<p class="comment-content">
     									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel reprehenderit omnis dolores corrupti voluptas modi maxime consectetur incidunt! Odit, omnis.
@@ -198,9 +221,9 @@
     					</div>
     					<div class="comment-block">
     						<div class="comment">
-    							<div class="img-wrapper">
-    								<img src="https://api.fnkr.net/testimg/70x70/1d1d1d/fff/?text=Photo">
-    							</div>
+    							<a href="#" class="img-wrapper">
+    								<img src="/img/04.png">
+    							</a>
     							<div class="comment-body">
     								<p class="comment-name">
     									Elena
@@ -216,12 +239,12 @@
     					</div>
     					<div class="reply-block">
     						<p class="reply">
-    							<a href="#" class="btn-readmore">АВТОРИЗУЙТЕСЬ</a> <span>чтобы оставлять комментарии</span>
+    							<a href="#" class="btn-readmore js-auth">АВТОРИЗУЙТЕСЬ</a> <span>чтобы оставлять комментарии</span>
     						</p>
     					</div>
-    					<div class="wysiwyg-block">
+    					<div class="wysiwyg-block hide">
     						<div class="wysiwyg">
-    							<textarea class="js-cleditor"></textarea>
+    							<textarea class="js-wysiwyg-textarea"></textarea>
     						</div>
     						<a href="#" class="btn-readmore">Комментировать</a>
     					</div>
@@ -251,7 +274,7 @@
     								<div class="article">
     									<p class="title">Книги об искусстве в свободном доступе</p>
     								</div>
-    								<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    								<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     								<span class="btn-readmore">
     									Читать статью
     								</span>
@@ -270,7 +293,7 @@
     								<div class="article">
     									<p class="title">Cколько россиян хотели бы не работать</p>
     								</div>
-    								<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    								<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     								<span class="btn-readmore">
     									Читать статью
     								</span>
@@ -289,7 +312,7 @@
     								<div class="article">
     									<p class="title">Стартует чемпионат для старшеклассников по борьбе с киберугрозами для старшеклассников по борьбе с киберугрозами</p>
     								</div>
-    								<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    								<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     								<span class="btn-readmore">
     									Читать статью
     								</span>
@@ -320,7 +343,7 @@
     						<div class="article">
     							<p class="title">Книги об искусстве в свободном доступе</p>
     						</div>
-    						<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    						<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     						<span class="btn-readmore">
     							Читать новость
     						</span>
@@ -339,7 +362,7 @@
     						<div class="article">
     							<p class="title">Книги об искусстве в свободном доступе</p>
     						</div>
-    						<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    						<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     						<span class="btn-readmore">
     							Читать новость
     						</span>
@@ -358,7 +381,7 @@
     						<div class="article">
     							<p class="title">Книги об искусстве в свободном доступе</p>
     						</div>
-    						<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    						<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     						<span class="btn-readmore">
     							Читать новость
     						</span>
@@ -377,7 +400,7 @@
     						<div class="article">
     							<p class="title">Книги об искусстве в свободном доступе</p>
     						</div>
-    						<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    						<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     						<span class="btn-readmore">
     							Читать новость
     						</span>
@@ -396,7 +419,7 @@
     						<div class="article">
     							<p class="title">Книги об искусстве в свободном доступе</p>
     						</div>
-    						<p class="author">13 МАЯ В 14:55 <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h15v10H0V0zm3 10h4l-4 3v-3z" fill="currentColor"/></svg> 13</p>
+    						<p class="author">13 МАЯ В 14:55 <i class="icon-prointellekt icon-comment"></i> 13</p>
     						<span class="btn-readmore">
     							Читать новость
     						</span>
@@ -424,9 +447,9 @@
     			</div>
     			<div class="col-sm-3 col-xs-12">
     				<div class="social">
-    					<a href="https://vk.com" target="_blank"><i class="svg svg-sircle-tw"></i></a>
-    					<a href="https://facebook.com" target="_blank"><i class="svg svg-sircle-fb"></i></a>
-    					<a href="https://twitter.com" target="_blank"><i class="svg svg-sircle-vk"></i></a>
+    					<a href="https://vk.com" target="_blank"><i class="icon-prointellekt icon-vk-footer"></i></a>
+    					<a href="https://facebook.com" target="_blank"><i class="icon-prointellekt icon-fb-footer"></i></a>
+    					<a href="https://twitter.com" target="_blank"><i class="icon-prointellekt icon-twitter-footer"></i></a>
     				</div>
     			</div>
     		</div>

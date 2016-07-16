@@ -1,0 +1,281 @@
+.author-book{
+	padding: 10px 0;
+	@media (min-width: $screen-md-min) {
+		padding: 10px;
+	}
+	background: #eef2f5;
+	overflow: hidden;
+	margin-bottom: 30px;
+	
+	.book-info-block{
+		overflow: hidden;
+		
+		.author-book-image{
+			margin-right: 20px;
+			margin-bottom: 15px;
+			width: 165px;
+			height: 240px;
+			@media (min-width: $screen-sm-min) {
+				width: 220px;
+				height: 335px;
+				margin-bottom: 0px;
+				float: left;
+			}			
+		}
+		.book-info-wrapper{
+			overflow: hidden;
+		}
+		.book-info{
+			.author-book-title{
+				font-size:24px;
+				line-height: 30px;
+				font-weight: bold;
+				margin-bottom: 5px;
+				color: #1d1d1d;
+				&:hover,
+				&:active{
+					color: #45bdc9;
+				}
+			}
+
+			.author-book-author,
+			.author-book-publisher,
+			.author-book-editor{
+				margin: 0;
+				font-size: 15px;
+				line-height: 21px;
+			}
+		}
+
+		.additional{
+			.icon-prointellekt{
+				margin-right : 5px;
+			}
+			.icon-signature-pen{
+				margin: 0 2px 0 -2px;
+				font-size: 18px;
+			}
+			a{
+				color: #2da1ad;
+				display: inline-block;
+				font-size: 12px;
+				line-height: 15px;
+				border-bottom: 1px dotted;
+				&:hover,
+			    &:focus{
+			    	color: #45BDC9;
+			    }
+			}
+		}
+
+		.book-description{
+			margin-top: 10px;
+			.author-book-description{
+				font-size: 15px;
+				line-height: 21px;
+				margin-bottom: 15px;
+			}
+
+			.author-book-details{
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+			    color: #2DA1AD;
+			    &:hover,
+			    &:focus{
+			    	color: #45BDC9;
+			    }
+			}
+			margin-bottom: 60px;
+			@media (min-width: $screen-sm-min) {
+				margin-bottom: 15px;
+			}
+
+			@media (min-width: $screen-sm-min) {
+				margin-bottom: 10px;
+			}
+
+			@media (min-width: $screen-sm-min) {
+
+			}
+		}
+	}
+	
+	.shop-block-wrapper{
+		
+	}
+
+	.shop-block{
+		clear: both;
+		position: relative;
+		width: 100%;
+		min-height: 130px;
+		padding: 0 25px;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		@media (min-width: $screen-sm-min){
+			padding:0;
+			width: 682px;
+		}
+		@media (min-width: $screen-md-min) {
+			width: 100%;
+			margin-top: 0px;
+		}
+
+		@media (min-width: $screen-md-min) {
+
+		}
+
+		.tabList{
+			position: absolute;
+			top: -40px;
+			left: 25px;
+			@media (min-width: $screen-sm-min) {
+				left: 0;
+			}
+			
+			.tooltip{
+				padding: 5px 0;
+				margin-left: -4px;
+				margin-top: 10px;
+				opacity: 1;
+				.tooltip-inner{
+					background: #4f547f;
+					border-radius: 0;
+					white-space: nowrap;
+					padding: 0 7px;
+					font-size: 12px;
+					line-height: 24px;
+					letter-spacing: 0.5px;
+				}
+				.tooltip-arrow{
+					border-top-color: #4f547f;
+				    bottom: -2px;
+				    margin-left: -4px;
+				    border-width: 8px 8px 0;
+				}
+			}
+			li.active{
+				.tooltip{
+					display: none !important;
+				}
+			}
+			li{
+				float: left;
+				position: relative;
+				display: inline-block;
+				&.active a{
+					background: #45bdc9;
+					color: #fff;
+				    &:after {
+					    content: "";
+					    width: 0;
+					    bottom: -10px;
+					    left: 0;
+					    right: 0;
+					    margin: auto;
+					    height: 0;
+					    position: absolute;
+					    border-left: 10px solid transparent;
+					    border-right: 10px solid transparent;
+					    border-top: 10px solid #45bdc9;
+					}
+				}
+				a{
+					i.icon-paper-book{
+						font-size: 24px;
+					}
+					i.icon-e-book{
+						font-size: 18px;
+					}
+					color: #949494;
+				    width: 40px;
+				    height: 40px;
+				    display: inline-block;
+				    text-align: center;
+				    padding: 7px 0 7px 1px;
+				    &.paper{
+				    	padding: 4px 0;
+				    }
+				}
+			}
+		}
+		.tab-pane{
+			padding: 20px 0;
+			@media (min-width: $screen-md-min) {
+				padding: 20px;
+			}
+			p{
+				margin: 0 0 10px 0;
+				font-size: 15px;
+				line-height: 30px;
+			}
+			.shop-list{
+				a{
+					display: inline-block;
+					margin-right: 25px;
+					margin-bottom: 10px;
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	#fragment{
+		padding: 25px 30px;
+		border: 1px solid #979797;
+		background: #fff;
+		position: relative;
+		clear: both;
+		.close-collapse{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			i{
+				color: #eef2f5;
+				font-size: 18px;
+			}
+		}
+		.title{
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		&:before{
+		    content: "";
+		    width: 0;
+		    top: -8px;
+		    left: 238px;
+		    height: 0;
+		    position: absolute;
+		    border-left: 8px solid transparent;
+		    border-right: 8px solid transparent;
+		    border-bottom: 8px solid #fff;
+		}
+	}
+
+	.shop-block-wrapper{
+		background: #fff;
+	    margin-top: 65px;
+	}
+
+	.book-info-block{
+		width: 100%;
+		padding: 0 25px;
+		margin-left: auto;
+		margin-right: auto;
+	@media (min-width: $screen-sm-min) {
+		padding: 0;
+		width: 682px;
+	}
+	@media (min-width: $screen-md-min) {
+		width: 100%;
+	}
+		
+	}
+}

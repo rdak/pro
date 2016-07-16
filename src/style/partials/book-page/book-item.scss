@@ -1,5 +1,8 @@
 .author-book{
-	padding: 10px;
+	padding: 10px 0;
+	@media (min-width: $screen-md-min) {
+		padding: 10px;
+	}
 	background: #eef2f5;
 	overflow: hidden;
 	margin-bottom: 30px;
@@ -9,7 +12,7 @@
 		
 		.author-book-image{
 			margin-right: 20px;
-			margin-bottom: 5px;
+			margin-bottom: 15px;
 			@media (min-width: $screen-sm-min) {
 				margin-bottom: 0px;
 				float: left;
@@ -17,9 +20,10 @@
 			width: 165px;
 			height: 240px;
 		}
-
+		.book-info-wrapper{
+			overflow: hidden;
+		}
 		.book-info{
-			float: left;
 			.author-book-title{
 				font-size:24px;
 				line-height: 30px;
@@ -36,22 +40,22 @@
 			.author-book-publisher,
 			.author-book-editor{
 				margin: 0;
-				font-size: 12px;
-				line-height: 18px;
+				font-size: 15px;
+				line-height: 21px;
 			}
 
 			.additional{
 				margin-top: 10px;
-				.fa{
+				.icon-prointellekt{
 					margin-right : 5px;
-					vertical-align: middle;
+					font-size: 18px;
 				}
 				a{
 					color: #2da1ad;
 					display: inline-block;
 					font-size: 12px;
 					line-height: 15px;
-					border-bottom: 1px dotted ;
+					border-bottom: 1px dotted;
 					&:hover,
 				    &:focus{
 				    	color: #45BDC9;
@@ -61,17 +65,9 @@
 		}
 
 		.book-description{
-			float: left;
-			@media (min-width: $screen-sm-min) {
-				float: right;
-			}
-			width: 310px;
 			.author-book-description{
-				font-size: 12px;
-				line-height: 18px;
-				@media (min-width: $screen-md-min) {
-					line-height: 20px;
-				}
+				font-size: 15px;
+				line-height: 21px;
 				margin-bottom: 15px;
 			}
 
@@ -79,6 +75,8 @@
 				font-weight: 600;
 				font-size: 12px;
 				line-height: 15px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
 			    color: #2DA1AD;
 			    &:hover,
 			    &:focus{
@@ -106,19 +104,33 @@
 
 	.shop-block{
 		clear: both;
-		background: #fff;
 		position: relative;
 		width: 100%;
 		min-height: 130px;
-		padding: 20px;
+		padding: 0 25px;
 		margin-top: 10px;
-		@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
-			margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		@media (min-width: $screen-sm-min){
+			padding:0;
+			width: 682px;
 		}
+		@media (min-width: $screen-md-min) {
+			width: 100%;
+			margin-top: 0px;
+		}
+
+		@media (min-width: $screen-md-min) {
+
+		}
+
 		.tabList{
 			position: absolute;
-			top: -41px;
-			left: 0;
+			top: -40px;
+			left: 25px;
+			@media (min-width: $screen-sm-min) {
+				left: 0;
+			}
 			@media (min-width: $screen-md-min) {
 				left: 185px;
 			}
@@ -170,15 +182,29 @@
 					}
 				}
 				a{
+					i.icon-paper-book{
+						font-size: 24px;
+					}
+					i.icon-e-book{
+						font-size: 18px;
+					}
 					color: #949494;
 				    width: 40px;
+				    height: 40px;
 				    display: inline-block;
 				    text-align: center;
-				    padding: 10px 0;
+				    padding: 7px 0 7px 1px;
+				    &.paper{
+				    	padding: 4px 0;
+				    }
 				}
 			}
 		}
 		.tab-pane{
+			padding: 20px 0;
+			@media (min-width: $screen-md-min) {
+				padding: 20px;
+			}
 			p{
 				margin: 0 0 10px 0;
 				font-size: 15px;
@@ -197,14 +223,22 @@
 		}
 	}
 
-	.book-info-block,
 	.shop-block-wrapper{
+		background: #fff;
+	}
+
+	.book-info-block{
 		width: 100%;
 		padding: 0 25px;
-		@media (min-width: $screen-sm-min) {
-			margin: 0 auto;
-			width: 712px;
-			padding: 0 15px;
-		}
+		margin-left: auto;
+		margin-right: auto;
+	@media (min-width: $screen-sm-min) {
+		padding: 0;
+		width: 682px;
+	}
+	@media (min-width: $screen-md-min) {
+		width: 100%;
+	}
+		
 	}
 }

@@ -13,6 +13,5 @@
 //= partials/jquery.dotdotdot.js
 //= partials/articleSmall.js
 
-//= partials/social.js
-//= partials/jquery.cleditor.js
+
 //= partials/wysiwyg.js

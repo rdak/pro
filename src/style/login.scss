@@ -80,6 +80,7 @@ body{
 		width: 100%;
 		margin-bottom: 5px;
 	  	letter-spacing: 1.3px;
+	  	margin : 0;
 		&,
 		&:hover,
 		&:focus{
@@ -100,28 +101,13 @@ body{
 			outline: none;
 			opacity: 1;
 			margin: 0 5px;
+			color: rgba(147, 147, 147, 0.5);
 			&:hover{
-				opacity: 0.7;
+				color: #45bdc9;
 			}
 		}
-		.svg.svg-sircle-vk{
-			background-image: url(/svg/vk-footer.svg);
-		}
-
-		.svg.svg-sircle-fb{
-			background-image: url(/svg/fb-footer.svg);
-		}
-
-		.svg.svg-sircle-tw{
-			background-image: url(/svg/twitter-footer.svg);
-		}
-
-		.svg.svg-sircle-vk,
-		.svg.svg-sircle-fb,
-		.svg.svg-sircle-tw{
-			display: inline-block;
-			width: 35px;
-			height: 35px;
+		.icon-prointellekt{
+			font-size: 50px;
 		}
 	}
 }

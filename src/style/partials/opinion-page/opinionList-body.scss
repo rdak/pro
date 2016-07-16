@@ -21,7 +21,7 @@
 		    width: 100%;
 		    @media (min-width: $screen-sm-min) {
 			    width: 45px;
-			    line-height: 1.4;
+			    line-height: 110px;
 			}
 		}
 
@@ -30,10 +30,12 @@
 				overflow: hidden;
 			}
 			.opinion-name{
+				display: inline-block;
 				font-size: 15px;
-				line-height: 24px;
+				line-height: 32px;
 				letter-spacing: 1px;
 				font-weight : 600;
+				margin: 0 0 0px 0;
 				&:focus,
 				&:hover{
 					text-decoration: none;
@@ -41,26 +43,32 @@
 				}
 			}
 			.opinion-title{
+				display: inline-block;
 				font-size: 18px;
-				line-height: 1.78;
+				line-height: 32px;
 				margin-bottom: 5px;
 				color: #1d1d1d;
 				font-weight: bold;
+				margin: 0 0 2px 0;
 				&:focus,
 				&:hover{
 					text-decoration: none;
 					color: #2da1ad;
 				}
 			}
+
 			.opinion-content{
 				font-size: 15px;
 				line-height: 24px;
+				margin: 0 0 5px 0;
 			}
+			
 			.opinion-date{
 				color: #949494;
 				font-size: 12px;
 				line-height: 2;
 				letter-spacing: 1px;
+				margin: 0 0 12px 0;
 			}
 		}
 	}

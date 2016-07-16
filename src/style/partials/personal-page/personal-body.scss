@@ -42,10 +42,11 @@
 				}
 				&:after{
 					position: absolute;
-					font-family: FontAwesome;
+					font-family: 'icomoon' !important;
 					display: inline-block;
-					content: "\f0d7";
+					content: "\e911";
 					margin-left: 5px;
+					font-size:12px;
 					opacity: 0;
 				}
 			}
@@ -54,7 +55,6 @@
 					position: relative;
 					color: #45bdc9;
 					&:after{
-						
 						opacity: 1;
 						-webkit-transition: linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
 					    transition: linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
@@ -104,6 +104,14 @@
 		font-weight: bold;
 		margin: 0;
 		color: #1d1d1d;
+		display: block;
+		&:hover{
+			color: #45bdc9;
+		}
+	}
+
+	.discussion-comments .icon-comment{
+		margin-left: 0;
 	}
 
 	.discussion-author,
@@ -134,8 +142,6 @@
 		margin-bottom: 10px;
 	}
 
-	
-	
 	.personal-comment-descirption,
 	.personal-comment-date{
 		margin-bottom: 0;
@@ -146,15 +152,16 @@
 	}
 
 	.personal-comment-date{
+		font-weight: 600;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 	}
 
 	.personal-comment-descirption{
+		text-transform: uppercase;
 		a{
 			font-weight: 600;
 			letter-spacing: 1px;
-			text-transform: uppercase;
 		    color: #2DA1AD;
 		    &:hover,
 		    &:focus{
@@ -230,8 +237,8 @@
 		.personal-book-publisher,
 		.personal-book-illustrator{
 			margin: 0;
-			font-size: 12px;
-			line-height: 18px;
+			font-size: 15px;
+			line-height: 24px;
 		}
 
 		.personal-book-description{
@@ -240,7 +247,9 @@
 			line-height: 24px;
 		}
 		
-		a{
+		.personal-book-details{
+			text-transform : uppercase;
+			letter-spacing: 1px;
 			font-weight: bold;
 			font-size: 12px;
 			line-height: 15px;

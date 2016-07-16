@@ -2,10 +2,11 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/icofont-prointellekt.css">
     <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
     <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/discussionNew.css">
+    <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
     <script src="js/article.js"></script>
     <title>discussionNew</title>
 </head>
@@ -21,12 +22,14 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <i class="icon-prointellekt icon-menu"></i>
           </button>
           <ul class="nav navbar-nav pull-right">
-            <li><a class="btn-hover search" href="#"><i class="fa fa-search"></i></a></li>
+            <li>
+              <a class="btn-hover search" href="#">
+                <i class="icon-prointellekt icon-question-user-notfound"></i>
+              </a>
+            </li>
           </ul>
           <ul class="nav navbar-nav pull-right submenu">
             <li><a class="btn-hover lang" href="#">eng</a></li>
@@ -35,6 +38,9 @@
           <a class="navbar-brand btn-hover" href="/"><strong>PRO</strong>INTELLEKT</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <i class="icon-prointellekt icon-close"></i>
+          </button>
           <ul class="nav navbar-nav">
             <li class="active"><a class="btn-hover" href="#">О проекте</a></li>
             <li><a class="btn-hover" href="#contact">КНИГИ</a></li>
@@ -71,8 +77,10 @@
     					</div>
     					<div class="wysiwyg-block">
     						<p class="label">Содержание</p>
-    						<div class="wysiwyg">
-    							<textarea class="js-cleditor"></textarea>
+    						<div class="wysiwyg-block">
+    							<div class="wysiwyg">
+    								<textarea class="js-wysiwyg-textarea"></textarea>
+    							</div>
     						</div>
     						<a href="#" class="btn-readmore">ОПУБЛИКОВАТЬ</a>
     					</div>
@@ -102,9 +110,9 @@
     			</div>
     			<div class="col-sm-3 col-xs-12">
     				<div class="social">
-    					<a href="https://vk.com" target="_blank"><i class="svg svg-sircle-tw"></i></a>
-    					<a href="https://facebook.com" target="_blank"><i class="svg svg-sircle-fb"></i></a>
-    					<a href="https://twitter.com" target="_blank"><i class="svg svg-sircle-vk"></i></a>
+    					<a href="https://vk.com" target="_blank"><i class="icon-prointellekt icon-vk-footer"></i></a>
+    					<a href="https://facebook.com" target="_blank"><i class="icon-prointellekt icon-fb-footer"></i></a>
+    					<a href="https://twitter.com" target="_blank"><i class="icon-prointellekt icon-twitter-footer"></i></a>
     				</div>
     			</div>
     		</div>

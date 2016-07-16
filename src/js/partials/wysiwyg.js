@@ -1,11 +1,23 @@
 $(document).ready(function(){
-	$('.js-cleditor').cleditor({
-		width : '100%',
-		height : '245',
-		controls : 'bold italic bullets link unlink image',
-		bodyStyle: "background: #fff; margin:10px 15px; font-family: Proxima; font-size: 15px; line-height: 20px; color: #1d1d1d; cursor:text"
+	tinymce.init({
+	    selector : '.js-wysiwyg-textarea',
+	    height : 300,
+	    menubar : false,
+	    statusbar : false,
+	    plugins: "image media link",
+	    toolbar: 'bold italic bullist link unlink image media',
+	    setup: function (ed) {
+	        ed.on('init', function (evt) {
+	            var toolbar = $(evt.target.editorContainer)
+	                            .find('>.mce-container-body >.mce-toolbar-grp');
+	            var editor = $(evt.target.editorContainer)
+	                            .find('>.mce-container-body >.mce-edit-area');
+	            toolbar.detach().insertAfter(editor);
+	      });
+	    },
+	    content_css : '/css/main.css'
 	});
-
+	
 	$('.js-auth').on('click', function(e){
 		e.preventDefault();
 		$('.reply-block, .wysiwyg-block').toggleClass('hide');

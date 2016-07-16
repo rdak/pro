@@ -12,7 +12,17 @@
   padding-right: $navbar-padding-horizontal;
   padding-left:  $navbar-padding-horizontal;
   height: 410px;
+  position: relative;
+  margin-top: 20px;
+  .navbar-toggle{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+  }
   @media (min-width: $screen-md-min) {
+    position: static;
+    margin: 0;
     height: 530px;
   }
   @include clearfix;
@@ -109,7 +119,7 @@
   line-height: 21px;
   letter-spacing: 1.7px;
   color: #ffffff;
-
+  margin-right: 25px;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -127,10 +137,15 @@
   position: relative;
   float: right;
   //margin-right: $navbar-padding-horizontal;
-  padding: 9px 15px;
+  padding: 4px 15px;
+  color: #fff;
   @include navbar-vertical-align(34px);
   background-image: none;
-
+  .icon-prointellekt{
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+  }
   &:focus {
     outline: 0;
   }
@@ -161,7 +176,7 @@
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
   > li {
     @media (min-width: $screen-lg-min) {
-      padding-top: $navbar-padding-vertical + 1;
+      padding-top: $navbar-padding-vertical;
     }
     padding-bottom: $navbar-padding-vertical;
   }
