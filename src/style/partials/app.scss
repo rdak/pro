@@ -127,18 +127,24 @@ strong{
 		}
 		&.tag-article{
 			color: #fff;
-			background: #a13a78;
+			&,
 			&:hover{
-				background: rgba(54, 188, 164, 0.15);
+				background: #a13a78;
 			}
 		}
 		&.tag-news{
 			color: #fff;
-			background: #37bca5;
+			&,
+			&:hover{
+				background: #37bca5;
+			}
 		}
 		&.tag-opinion{
 			color: #fff;
-			background: #45bdc9;
+			&,
+			&:hover{
+				background: #45bdc9;
+			}
 		}
 	}
 }
@@ -195,6 +201,14 @@ strong{
 
 	&.btn-opinion:after{
 	    background: $brand-opinion;
+	}
+
+	&.btn-cancel{
+		
+		color: #fff;
+		&:after{
+			background: rgba(147, 147, 147, 0.5);
+		}
 	}
 	
 	&:hover{
@@ -574,4 +588,19 @@ body#tinymce{
 .icon-comment,
 .icon-eye{
 	margin-left: 15px;
+}
+
+@import "searchText-page/searchText-header";
+
+.searchText-header{
+	background: rgba(54, 188, 164, 1);
+    top: -140px;
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.modal-open{
+	padding:0 !important;
 }

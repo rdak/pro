@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/login.css">
     <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -40,6 +41,28 @@
                         <p class="">или</p>
                         <form action="">
                             <div class="field-wrapper">
+                                <input class="field" type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="field-wrapper">
+                                <input class="field" type="password" name="password" placeholder="Пароль">
+                            </div>
+                            <label class="btn-readmore">
+                                Войти
+                                <input type="submit" class="hide" value="Войти">
+                            </label>
+                        </form>
+                        <a href="/restore.html" class="simplelink">Восстановить пароль</a>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="signup">
+                        <p class="">через аккаунт в социальных сетях</p>
+                        <div class="social">
+                            <a href="#" target="_blank"><i class="icon-prointellekt icon-vk-footer"></i></a>
+                            <a href="#" target="_blank"><i class="icon-prointellekt icon-fb-footer"></i></a>
+                            <a href="#" target="_blank"><i class="icon-prointellekt icon-twitter-footer"></i></a>
+                        </div>
+                        <p class="">или</p>
+                        <form action="">
+                            <div class="field-wrapper field-error">
                                 <input class="field" type="text" name="name" placeholder="Имя">
                             </div>
                             <div class="field-wrapper">
@@ -54,42 +77,8 @@
                             </label>
                         </form>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="signup">
-                        <p class="">через аккаунт в социальных сетях</p>
-                        <div class="social">
-                            <a href="#" target="_blank"><i class="icon-prointellekt icon-vk-footer"></i></a>
-                            <a href="#" target="_blank"><i class="icon-prointellekt icon-fb-footer"></i></a>
-                            <a href="#" target="_blank"><i class="icon-prointellekt icon-twitter-footer"></i></a>
-                        </div>
-                        <p class="">или</p>
-                        <form action="">
-                            <div class="field-wrapper">
-                                <input class="field" type="text" name="email" placeholder="Email">
-                            </div>
-                            <div class="field-wrapper">
-                                <input class="field" type="password" name="password" placeholder="Пароль">
-                            </div>
-                            <label class="btn-readmore">
-                                Войти
-                                <input type="submit" class="hide" value="Войти">
-                            </label>
-                        </form>
-                        <a href="#" class="">Восстановить пароль</a>
-                </div>
+                
             </div>
-        </div>
-        <div class="restore hide">
-            <p class="">Восстановить пароль</p>
-            <form action="">
-                <div class="field-wrapper">
-                    <input class="field" type="text" name="email" placeholder="Email">
-                </div>
-                <label class="btn-readmore">
-                    ВОССТАНОВИТЬ ПАРОЛЬ
-                    <input type="submit" class="hide" value="ВОССТАНОВИТЬ ПАРОЛЬ">
-                </label>
-            </form>
-            <a href="#" class=""> ←  Назад</a>
         </div>
     </div>
 </body>

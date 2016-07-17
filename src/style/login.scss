@@ -2,6 +2,9 @@
 
 body{
 	background: url("/img/img-registration-bg-color.png");
+	&.contactForm-wrapper{
+		background: url("/img/img-registration-bg-color.png");
+	}
 	text-align: center;
 }
 
@@ -19,7 +22,19 @@ body{
 
 .form-wrapper{
 	width: 270px;
-	margin: 100px auto 0;
+	margin: 100px auto 50px;
+	&.contacts{
+		margin-top: 200px;
+		width: 420px;
+		form{
+			width: 270px;
+			margin: 0 auto;
+		}
+		.title{
+			font-size: 24px;
+			line-height: 24px;
+		}
+	}
 	.auth_login_menu_links{
 		li{
 			width: 50%;
@@ -56,8 +71,37 @@ body{
 		margin: 10px 0 15px;
 	}
 
+	.simplelink{
+		color: #fff;
+		&:hover{
+			color: #45bdc9;
+		}
+	}
+
+	.big-title{
+		font-size:24px;
+		line-height: 24px;
+	}
+
 	.field-wrapper{
 		margin: 0 0 10px 0;
+	}
+	.field-wrapper{
+		position: relative;
+		&.field-error:after{
+			color: #fff;
+			background: #a13a78;
+			border-radius: 25px;
+		    position: absolute;
+		    width: 15px;
+		    height: 15px;
+		    top: 17px;
+		    right: 35px;
+		    font-family: 'icomoon' !important;
+		    display: inline-block;
+		    font-size: 14px;
+		    content: "\e908";
+		}
 	}
 	.field-wrapper .field{
 		width: 100%;
@@ -80,7 +124,7 @@ body{
 		width: 100%;
 		margin-bottom: 5px;
 	  	letter-spacing: 1.3px;
-	  	margin : 0;
+	  	margin : 0 0 15px 0;
 		&,
 		&:hover,
 		&:focus{
@@ -109,5 +153,28 @@ body{
 		.icon-prointellekt{
 			font-size: 50px;
 		}
+	}
+
+	.tooltip.top{
+		margin: 0;
+	    margin-top: 15px;
+	    margin-left: 93px;
+        padding: 8px 0;
+        opacity: 1;
+	}
+
+	.tooltip-inner{
+		padding: 0 10px;
+		line-height: 30px;
+	    font-size: 12px;
+	    letter-spacing: 0.5px;
+		background: #a13a78;
+		border-radius: 0;
+	}
+
+	.tooltip.top .tooltip-arrow{
+		border-top-color: #a13a78;
+	    margin-left: -10px;
+	    border-width: 10px 10px 0;
 	}
 }

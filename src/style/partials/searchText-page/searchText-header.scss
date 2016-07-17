@@ -1,17 +1,33 @@
 .searchText-header{
 	background: rgba(54, 188, 164, 0.3);
-	padding: 90px 0 15px 0;
+	padding: 80px 0 5px 0;
 	text-transform : uppercase;
 	color: #1d1d1d;
 	margin-bottom: 30px;
-	.fa{
-		margin-right: 25px;
-		width: 25px;
+
+	.info{
+		position: relative;
+		&:before{
+			line-height: 55px;
+		    position: absolute;
+		    top: 0;
+		    left: 0px;
+		    font-family: 'icomoon' !important;
+		    display: inline-block;
+		    font-size: 24px;
+		    content: "\e908";
+		}
 	}
-	.search-text{
-		margin:0;
-		font-weight: bold;
-		font-size: 24px;
-		line-height: 36px;
+	.form-wrapper{
+		.field-wrapper{
+			margin: 0;
+			.field{
+				background: transparent;
+				padding: 10px 10px 10px 50px;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 36px;
+			}
+		}
 	}
 }

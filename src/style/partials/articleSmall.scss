@@ -33,12 +33,20 @@
 	cursor: pointer;
 	padding-bottom: 15px;
 
-	
+	.description{
+		margin-bottom: 0px;
+	}
+
 	@media (min-width: $screen-md-min) {
-		height: 400px;
+		height: 420px;
 		padding-bottom: 0;
 		margin-bottom: 30px;
 	}
+
+	.btn-readmore{
+		bottom : 10px;
+	}
+
 	&.article-news{
 		.info .btn-readmore:after{
 			background: #37bca5;
@@ -48,6 +56,18 @@
 	&.article-review{
 		.info .btn-readmore:after{
 			background: #4f547f;
+		}
+		.btn-readmore{
+			bottom : 0px;
+		}
+	}
+
+	&.article-opinion{
+		.info .btn-readmore:after{
+			background: #45bdc9;
+		}
+		.btn-readmore{
+			bottom : 0px;
 		}
 	}
 	
@@ -167,7 +187,7 @@
 }
 
 .adphoto{
-	padding-bottom: 10px;
+	margin-bottom: 30px;
 	max-width: 100%;
 	max-height: 100%;
 }
