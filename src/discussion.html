@@ -6,21 +6,17 @@
     <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
     <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/discussion.css">
-    <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+    <script src='js/tinymce/tinymce.min.js'></script>
     <script src="js/article.js"></script>
     <title>discussionList</title>
 </head>
 <body>
-    <div class="loader-wrapper">
-        <div class="loader">
-            <a class="logo-brand" href="/"><strong>PRO</strong>INTELLEKT</a>
-        </div>
-    </div>
-
     //= template/header.html
-
-    //= template/discussion-page/discussion-header.html
-    //= template/discussion-page/discussion-body.html
+    <div id="page-wrap">
+        //= template/discussion-page/discussion-header.html
+        //= template/discussion-page/discussion-body.html
+        <div class="hfooter"></div>
+    </div>
 
     //= template/footer.html
 </body>

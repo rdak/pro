@@ -103,9 +103,55 @@
 	overflow: hidden;
 }
 
+.mce-ico{
+	text-align: center;
+}
+
 .mce-tinymce{
 	border: none !important;
 }
+
+.mce-window{
+	border: 10px solid #EEF2F5 !important;
+	.mce-title{
+		text-transform : uppercase;
+		font-size: 15px !important;
+	}
+
+	.mce-label{
+		font-size: 15px !important;
+	}
+
+	.mce-textbox:focus,
+	.mce-textbox.mce-focus{
+		border-color: #45BDC9;
+	}
+	.mce-btn.mce-primary{
+		background: #45BDC9;
+	}
+
+	.mce-foot .mce-btn{
+		border : transparent;
+		span{
+			text-transform: uppercase;
+		}
+	}
+
+	.mce-btn{
+		background: #EEF2F5;
+	}
+
+}
+
+.mce-menu-item:hover,
+.mce-menu-item.mce-selected,
+.mce-menu-item:focus,
+.mce-menu-item-normal.mce-active{
+	background: #45BDC9 !important;
+}
+
+
+
 
 .mce-widget.mce-tooltip {
     display: none !important;

@@ -76,6 +76,12 @@ body{
 		&:hover{
 			color: #45bdc9;
 		}
+		.icon-back{
+		    font-size: 	8px;
+			vertical-align: top;
+			margin-right: 5px;
+			line-height: 20px;
+		}
 	}
 
 	.big-title{
@@ -89,18 +95,17 @@ body{
 	.field-wrapper{
 		position: relative;
 		&.field-error:after{
-			color: #fff;
-			background: #a13a78;
+			color: #a13a78;
 			border-radius: 25px;
 		    position: absolute;
 		    width: 15px;
 		    height: 15px;
-		    top: 17px;
+		    top: 15px;
 		    right: 35px;
 		    font-family: 'icomoon' !important;
 		    display: inline-block;
 		    font-size: 14px;
-		    content: "\e908";
+		    content: "\e902";
 		}
 	}
 	.field-wrapper .field{
@@ -125,6 +130,7 @@ body{
 		margin-bottom: 5px;
 	  	letter-spacing: 1.3px;
 	  	margin : 0 0 15px 0;
+	  	padding : 20px 20px;
 		&,
 		&:hover,
 		&:focus{

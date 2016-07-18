@@ -15,43 +15,43 @@
 		background-size: cover;
 	    background-position: center center;
 	}
-		.info{
-			.article{
-				color: #fff;
-				text-align: center;
-				width: 330px;
-				padding: 15px 35px;
-				position: absolute;
-				bottom: -40px;
-				left: 0;
-				right: 0;
-				margin: auto;
-				z-index: 3;
-				.title{
-					font-size: 24px;
-					line-height: 1.25;
-					margin: 0 0 10px 0;
-					text-transform: uppercase;
-					font-weight: 800;
-				}
-				.description{
-					font-size: 18px;
-					line-height: 22px;
-					margin-bottom: 5px;
-				}
+	.info{
+		.article{
+			color: #fff;
+			text-align: center;
+			width: 330px;
+			padding: 15px 35px;
+			position: absolute;
+			bottom: -40px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			z-index: 3;
+			.title{
+				font-size: 24px;
+				line-height: 1.25;
+				margin: 0 0 10px 0;
+				text-transform: uppercase;
+				font-weight: 800;
 			}
-			.bar{
-				position: absolute;
-				bottom: -40px;
-				z-index: 2;
-				background: #37bca5;
-				width: 330px;
-	  			height: 130px;
-	  			left: 0;
-			    right: 0;
-			    margin: auto;
+			.description{
+				font-size: 18px;
+				line-height: 22px;
+				margin-bottom: 5px;
 			}
 		}
+		.bar{
+			position: absolute;
+			bottom: -40px;
+			z-index: 2;
+			background: #37bca5;
+			width: 330px;
+  			height: 130px;
+  			left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+	}
 	&.lg .article{
 		width: 480px;
 	}

@@ -22,9 +22,11 @@
     z-index: 1;
   }
   @media (min-width: $screen-md-min) {
-    position: static;
     margin: 0;
     height: 530px;
+  }
+  @media (min-width: $screen-lg-min) {
+    position: static;
   }
   @include clearfix;
   -webkit-overflow-scrolling: touch;

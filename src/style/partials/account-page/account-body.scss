@@ -1,127 +1,128 @@
-.form-wrapper{
-	margin-top: 110px;
+#page-wrap{
+	.form-wrapper{
+		margin-top: 110px;
+		.field-wrapper{
+			margin-bottom: 30px;
+		}
+		.field-photo{
+			position: relative;
+			margin: 0 auto 30px auto;
+			width: 195px;
+			height: 195px;
+			@media (min-width: $screen-sm-min) {
+				margin: 0;
+				width : 100%;
+				height : 100%;
+			}
+			img{
+				max-width: 100%;
+				min-height: 100%;
+			}
+		}
+		.js-removePhoto{
+			position: absolute;
+			top:-10px;
+			right:-10px;
+			padding: 5px;
+			line-height: 1;
+			display: inline-block;
+			border-radius: 25px;
+			background: #fff;
+			i{
+				color: #45bdc9;
+			}
+			&:hover i{
+				color: #45BDC9;
+			}
+		}
+
+		.js-changePhoto{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #45bdc9;
+			color: #fff;
+			line-height:40px;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			text-transform: uppercase;
+			letter-spacing: 1.3px;
+			font-weight: 600;
+		}
+
+		.title{
+			text-transform: uppercase;
+			font-weight: 600;
+			line-height: 24px;
+			margin-bottom: 15px;
+			text-align: left;
+		}
+
+		.btn-readmore{
+			width: 220px;
+			float: none;
+			display: block;
+			margin: 0 auto 20px auto;
+			@media (min-width: $screen-sm-min) {
+				float: left;
+				margin: 0 20px 0 0;
+			}
+		}
+
+		.btn-cancel{
+			width: 160px;
+			margin: 0 auto;
+			float: none;
+			@media (min-width: $screen-sm-min) {
+				float: left;
+				margin: 0 0px 0 0;
+			}
+		}
+	}
+
 	.field-wrapper{
+		background: #eef2f5;
+		padding: 10px;
 		margin-bottom: 30px;
-	}
-	.field-photo{
-		position: relative;
-		margin: 0 auto 30px auto;
-		width: 195px;
-		height: 195px;
-		@media (min-width: $screen-sm-min) {
-			margin: 0;
-			width : 100%;
-			height : 100%;
-		}
-		img{
-			max-width: 100%;
-			min-height: 100%;
-		}
-	}
-	.js-removePhoto{
-		position: absolute;
-		top:-10px;
-		right:-10px;
-		padding: 5px;
-		line-height: 1;
-		display: inline-block;
-		border-radius: 25px;
-		background: #fff;
-		i{
-			color: #45bdc9;
-		}
-		&:hover i{
-			color: #45BDC9;
-		}
-	}
-
-	.js-changePhoto{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: #45bdc9;
-		color: #fff;
-		line-height:40px;
-		text-align: center;
-		display: inline-block;
-		vertical-align: middle;
-		text-transform: uppercase;
-		letter-spacing: 1.3px;
-		font-weight: 600;
-	}
-
-	.title{
-		text-transform: uppercase;
-		font-weight: 600;
-		line-height: 24px;
-		margin-bottom: 15px;
-		text-align: left;
-	}
-
-	.btn-readmore{
-		width: 220px;
-		float: none;
-		display: block;
-		margin: 0 auto 20px auto;
-		@media (min-width: $screen-sm-min) {
-			float: left;
-			margin: 0 20px 0 0;
-		}
-	}
-
-	.btn-cancel{
-		width: 160px;
-		margin: 0 auto;
-		float: none;
-		@media (min-width: $screen-sm-min) {
-			float: left;
-			margin: 0 0px 0 0;
-		}
-	}
-}
-
-.field-wrapper{
-	background: #eef2f5;
-	padding: 10px;
-	margin-bottom: 30px;
-	max-width: 320px;
-	.field{
-		padding: 10px 15px;
-	}
-	&.field-site,
-	&.field-facebook,
-	&.field-vkontakte,
-	&.field-twitter{
+		max-width: 320px;
 		.field{
-			padding-left: 50px;
+			padding: 10px 15px;
 		}
-		position: relative;
-		&:before{
-		    line-height: 70px;
-		    position: absolute;
-		    top: 0;
-		    left: 25px;
-		    font-family: 'icomoon' !important;
-		    display: inline-block;
-		    font-size: 20px;
-		    color: #949494;
+		&.field-site,
+		&.field-facebook,
+		&.field-vkontakte,
+		&.field-twitter{
+			.field{
+				padding-left: 50px;
+			}
+			position: relative;
+			&:before{
+			    line-height: 60px;
+			    position: absolute;
+			    top: 0;
+			    left: 25px;
+			    font-family: 'icomoon' !important;
+			    display: inline-block;
+			    font-size: 20px;
+			    color: #949494;
+			}
 		}
-	}
-	&.field-site:before{
-	    content: "";
-	}
-	&.field-facebook:before{
-	    content: "\e908";
-	}
-	&.field-vkontakte:before{
-	    content: "\e914";
-	}
-	&.field-twitter:before{
-	    content: "\e912";
+		&.field-site:before{
+		    content: "\e900";
+		}
+		&.field-facebook:before{
+		    content: "\e90b";
+		}
+		&.field-vkontakte:before{
+		    content: "\e917";
+		}
+		&.field-twitter:before{
+		    content: "\e915";
+		}
 	}
 }
-
 
 .social{
 	text-align: left;

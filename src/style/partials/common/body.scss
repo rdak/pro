@@ -18,6 +18,15 @@
 			}
 		}
 
+		a{
+			color: #2DA1AD;
+			&:focus,
+			&:hover,
+			&:active{
+				color: #45BDC9;
+			}
+		}
+
 		.lead{
 			font-size: 18px;
 			line-height: 28px;

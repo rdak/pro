@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	tinymce.init({
+	  	language: 'ru',
 	    selector : '.js-wysiwyg-textarea',
 	    height : 300,
 	    menubar : false,

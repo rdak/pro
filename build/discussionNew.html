@@ -6,17 +6,19 @@
     <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
     <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/discussionNew.css">
-    <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+    <script src='js/tinymce/tinymce.min.js'></script>
     <script src="js/article.js"></script>
     <title>discussionNew</title>
 </head>
 <body>
     <div class="loader-wrapper">
+        <div class="turn-loader">
+            <span class="logo-brand" href="/"><strong>PRO</strong>INTELLEKT</span>
+        </div>
         <div class="loader">
-            <a class="logo-brand" href="/"><strong>PRO</strong>INTELLEKT</a>
+            <span class="logo-brand" href="/"><strong>PRO</strong>INTELLEKT</span>
         </div>
     </div>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -27,7 +29,7 @@
           <ul class="nav navbar-nav pull-right">
             <li>
               <a class="btn-hover search js-search" href="#">
-                <i class="icon-prointellekt icon-question-user-notfound"></i>
+                <i class="icon-prointellekt icon-search"></i>
               </a>
             </li>
           </ul>
@@ -50,7 +52,6 @@
             <li><a class="btn-hover" href="#">ПСИХОЛОГИЯ</a></li>
             <li><a class="btn-hover" href="#">ФИЛОСОФИЯ</a></li>
           </ul>
-          
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -61,47 +62,48 @@
     		</div>
     	</div>
     </div>
-
-    <div class="common-header list-header discussion-header">
-    	<div class="container">
-    		<div class="info">
-    			<h1 class="name">
-    				НОВОЕ ОБСУЖДЕНИЕ
-    			</h1>
-    		</div>
-    	</div>
+    <div id="page-wrap">
+        <div class="common-header list-header discussion-header">
+        	<div class="container">
+        		<div class="info">
+        			<h1 class="name">
+        				НОВОЕ ОБСУЖДЕНИЕ
+        			</h1>
+        		</div>
+        	</div>
+        </div>
+        <div class="container full">
+        	<div class="row">
+        		<div class="col-lg-8 col-sm-12 col-xs-12">
+        			<div class="container discussionNew">
+        				<div class="discussionNew-form form-wrapper">
+        					<div class="field-wrapper title">
+        						<p class="label">ЗАГОЛОВОК</p>
+        						<div class="input-wrapper">
+        							<input type="text">
+        						</div>
+        					</div>
+        					<div class="wysiwyg-block">
+        						<p class="label">Содержание</p>
+        						<div class="wysiwyg-block">
+        							<div class="wysiwyg">
+        								<textarea class="js-wysiwyg-textarea"></textarea>
+        							</div>
+        						</div>
+        						<a href="#" class="btn-readmore">ОПУБЛИКОВАТЬ</a>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="col-lg-4 col-sm-12 col-xs-12">
+        			<div class="container-fluid full-sm rightSiteBar">
+        				
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="hfooter"></div>
     </div>
-    <div class="container full">
-    	<div class="row">
-    		<div class="col-lg-8 col-sm-12 col-xs-12">
-    			<div class="container discussionNew">
-    				<div class="discussionNew-form form-wrapper">
-    					<div class="field-wrapper title">
-    						<p class="label">ЗАГОЛОВОК</p>
-    						<div class="input-wrapper">
-    							<input type="text">
-    						</div>
-    					</div>
-    					<div class="wysiwyg-block">
-    						<p class="label">Содержание</p>
-    						<div class="wysiwyg-block">
-    							<div class="wysiwyg">
-    								<textarea class="js-wysiwyg-textarea"></textarea>
-    							</div>
-    						</div>
-    						<a href="#" class="btn-readmore">ОПУБЛИКОВАТЬ</a>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="col-lg-4 col-sm-12 col-xs-12">
-    			<div class="container-fluid full-sm rightSiteBar">
-    				
-    			</div>
-    		</div>
-    	</div>
-    </div>
-
     <footer class="footer">
     	<div class="container">
     		<div class="row links">
