@@ -14,3 +14,4 @@
 
 //= partials/jquery.dotdotdot.js
 //= partials/articleSmall.js
+//= partials/articleMiddle.js
