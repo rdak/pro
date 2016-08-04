@@ -5997,7 +5997,7 @@ body#tinymce {
           float: right; } }
       @media (min-width: 1380px) {
         .article-middle .info .btn-readmore {
-          margin: 20px 0 0px 100px;
+          margin: 25px 0 0px 100px;
           float: left; } }
     .article-middle .info .author {
       display: none;
@@ -6007,6 +6007,7 @@ body#tinymce {
       line-height: 15px;
       opacity: 0;
       font-weight: 600;
+      margin-bottom: 0;
       -webkit-transition: color linear .3s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .3s;
       transition: color linear .3s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .3s;
       transition: transform cubic-bezier(0.785, .135, .15, .86) .3s, color linear .3s;
