@@ -8,6 +8,7 @@
     <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-logged.css">
     <script src="js/main.js"></script>
     <title>main</title>
 </head>
@@ -36,7 +37,24 @@
           </ul>
           <ul class="nav navbar-nav pull-right submenu">
             <li><a class="btn-hover lang" href="#">eng</a></li>
-            <li><a class="btn-hover login" href="#">войти</a></li>
+            <li class="user-info">
+    
+              <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="img/09.png">
+                <i class="icon-prointellekt icon-triangle-down"></i>
+              </a>
+              <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                <li>
+                  <a href="/author.html">Моя Страница</a>
+                </li>
+                <li>
+                  <a href="/accountSettings.html">Редактировать</a>
+                </li>
+                <li>
+                  <a href="#" class="js-logout">Выйти</a>
+                </li>
+              </ul>
+            </li>
           </ul>
           <a class="navbar-brand btn-hover" href="/"><strong>PRO</strong>INTELLEKT</a>
         </div>

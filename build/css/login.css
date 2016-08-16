@@ -5461,10 +5461,10 @@ body#tinymce {
   padding: 0 !important; }
 
 body {
-  background: url("img/img-registration-bg-color.png");
+  background: url("/img/img-registration-bg-color.png");
   text-align: center; }
   body.contactForm-wrapper {
-    background: url("img/img-registration-bg-color.png"); }
+    background: url("/img/img-registration-bg-color.png"); }
 
 .logo-brand {
   display: inline-block;
