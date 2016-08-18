@@ -1,0 +1,61 @@
+.discussion-item-full{
+	padding: 25px 25px;
+	background: #fff;
+
+	.container.full-sm & .row{
+		@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+		    width: 712px;
+		    padding-left: 0;
+		    padding-right: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+	}
+	
+	.col-md-9{
+		@media (max-width: $screen-sm-min) {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	@media (min-width: $screen-md-min) {
+		width: 100%;
+		padding: 25px 30px;
+	}
+
+	&:nth-child(2n){
+		background: #eef2f5;
+	}
+
+	.discussion-title{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: bold;
+		margin: 0;
+		color: #1d1d1d;
+		display: block;
+		&:hover{
+			color: #45bdc9;
+		}
+	}
+	
+	.discussion-author,
+	.discussion-comments,
+	.discussion-date{
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #949494;
+		margin: 0;
+		i{
+			margin-left: 0;
+		}
+	}
+}

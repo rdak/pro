@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fonts/icofont-prointellekt.css">
+
+    <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
+    <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/account.css">
+    <script src="js/account-settings.js"></script>
+    <title>Account settings</title>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="turn-loader">
+            <span class="logo-brand" href="/"><strong>PRO</strong>INTELLEKT</span>
+        </div>
+        <div class="loader">
+            <span class="logo-brand" href="/"><strong>PRO</strong>INTELLEKT</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="icon-prointellekt icon-menu"></i>
+          </button>
+          <ul class="nav navbar-nav pull-right">
+            <li>
+              <a class="btn-hover search js-search" href="#">
+                <i class="icon-prointellekt icon-search"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav pull-right submenu">
+            <li><a class="btn-hover lang" href="#">eng</a></li>
+            <li><a class="btn-hover login" href="#">войти</a></li>
+          </ul>
+          <a class="navbar-brand btn-hover" href="/"><strong>PRO</strong>INTELLEKT</a>
+          <div id="navbar" class="navbar-collapse collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <i class="icon-prointellekt icon-close"></i>
+            </button>
+            <ul class="nav navbar-nav">
+              <li class="active"><a class="btn-hover" href="#">О проекте</a></li>
+              <li><a class="btn-hover" href="#contact">КНИГИ</a></li>
+              <li><a class="btn-hover" href="#">КУЛЬТУРА</a></li>
+              <li><a class="btn-hover" href="#">НАУКА</a></li>
+              <li><a class="btn-hover" href="#">ОБЩЕСТВО</a></li>
+              <li><a class="btn-hover" href="#">ПСИХОЛОГИЯ</a></li>
+              <li><a class="btn-hover" href="#">ФИЛОСОФИЯ</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+    <div class="searchText-header">
+    	<div class="container form-wrapper">
+    		<div class="info field-wrapper">
+    			<input class="search-text field" type="text" placeholder="Поиск" value="">
+    		</div>
+    	</div>
+    </div>
+    <div id="page-wrap">
+        <div class="container form-wrapper">
+        	<div class="row">
+        		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+        			<div class="field-photo">
+        				<a href="#" class="js-removePhoto"><i class="icon-prointellekt icon-close"></i></a>
+        				<img src="https://api.fnkr.net/testimg/220x220/00CED1/FFF/?text=img+placeholder">
+        				<a href="#" class="js-changePhoto">изменить фото</a>
+        			</div>
+        		</div>
+        		<div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+        			<div class="row">
+        				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+        					<div class="row">
+        						<div class="col-xs-12 col-md-6">
+        						    <p class="title text-center">
+        						      	ИМЯ И ФАМИЛИЯ
+        						    </p>
+        				            <div class="field-wrapper">
+        				                <input class="field" type="text" name="name" placeholder="Имя">
+        				            </div>
+        						</div>
+        						<div class="col-xs-12 col-md-6">
+        							<p class="title text-center">
+        						      	ГОРОД
+        						    </p>
+        				            <div class="field-wrapper">
+        				                <select name="" id="">
+        				                	<option data-display="Город">Москва</option>
+        				                	<option >Новосибирск</option>
+        				                	<option >Питер</option>
+        				                	<option >Прага</option>
+        				                </select>
+        				            </div>
+        						</div>
+        						<div class="col-xs-12 col-md-6">
+        							<p class="title text-center">
+        						      	Сайт
+        						    </p>
+        				            <div class="field-wrapper field-site">
+        				                <input class="field" type="text" name="name" placeholder="Сайт">
+        				            </div>
+        						</div>
+        						<div class="col-xs-12 col-md-6">
+        							<p class="title text-center">
+        						      	Facebook
+        						    </p>
+        				            <div class="field-wrapper field-facebook">
+        				                <input class="field" type="text" name="name" placeholder="Facebook">
+        				            </div>
+        						</div>
+        						<div class="col-xs-12 col-md-6">
+        							<p class="title text-center">
+        						      	Вконтакте
+        						    </p>
+        				            <div class="field-wrapper field-vkontakte">
+        				                <input class="field" type="text" name="name" placeholder="Вконтакте">
+        				            </div>
+        						</div>
+        						<div class="col-xs-12 col-md-6">
+        							<p class="title text-center">
+        						      	Twitter
+        						    </p>
+        				            <div class="field-wrapper field-twitter">
+        				                <input class="field" type="text" name="name" placeholder="Twitter">
+        				            </div>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+        					<div class="row">
+        						<div class="col-xs-12">
+        							<p class="title text-center">
+        						      	ЭЛЕКТРОННАЯ ПОЧТА
+        						    </p>
+        				            <div class="field-wrapper">
+        				                <input class="field" type="text" name="name" placeholder="Имя">
+        				            </div>
+        						</div>
+        						<div class="col-xs-12">
+        							<p class="title text-center">
+        						      	ПОМЕНЯТЬ ПАРОЛЬ
+        						    </p>
+        				            <div class="field-wrapper">
+        				                <input class="field" type="text" name="name" placeholder="Имя">
+        				            </div>
+        						</div>
+        						<div class="col-xs-12">
+        							<p>Социальные сети</p>
+        							<p>Нажмите на соответствующую иконку соц. сети, чтобы связать ее с вашим аккаунтом</p>
+        							<div class="social">
+        								<a href="https://vk.com" target="_blank"><i class="icon-prointellekt icon-vk-footer"></i></a>
+        								<a href="https://facebook.com" target="_blank"><i class="icon-prointellekt icon-fb-footer"></i></a>
+        								<a href="https://twitter.com" target="_blank"><i class="icon-prointellekt icon-twitter-footer"></i></a>
+        							</div>
+        						</div>
+        						<div class="col-xs-12">
+        							<a href="#" class="btn-readmore">СОХРАНИТЬ</a>
+        							<a href="#" class="btn-readmore btn-cancel">Отмена</a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="hfooter"></div>
+    </div>
+    <footer class="footer">
+    	<div class="container">
+    		<div class="row links">
+    			<div class="col-sm-3 col-xs-12">
+    				<a href="/" class="brand btn-hover"><strong>PRO</strong>INTELLEKT</a>
+    			</div>
+    			<div class="col-sm-6 col-xs-12 text-center">
+    				<ul class="navigation">
+    			        <li class="active"><a class="btn-hover" href="#">О проекте</a></li>
+    			        <li><a class="btn-hover" href="#contact">КНИГИ</a></li>
+    			        <li><a class="btn-hover" href="#">Контакты</a></li>
+    			    </ul>
+    			</div>
+    			<div class="col-sm-3 col-xs-12">
+    				<div class="social">
+    					<a href="https://vk.com" target="_blank"><i class="icon-prointellekt icon-vk-footer"></i></a>
+    					<a href="https://facebook.com" target="_blank"><i class="icon-prointellekt icon-fb-footer"></i></a>
+    					<a href="https://twitter.com" target="_blank"><i class="icon-prointellekt icon-twitter-footer"></i></a>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-sm-6 col-xs-12 copyright">
+    				<div class="">
+    					© 2016, ProIntellekt
+    				</div>
+    			</div>
+    			<div class="col-sm-6 col-xs-12 support">
+    				<div class="text-right">
+    					Разработка и поддержка сайта <a href="#">Inteliour</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+</body>
+</html>

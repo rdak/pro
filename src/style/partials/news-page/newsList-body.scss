@@ -1,0 +1,47 @@
+.news-body{
+	overflow: hidden;
+	@media (min-width: $screen-lg-min) {
+		.container{
+			width : 100%;
+			padding: 0;
+		}
+	}
+	
+	.full-sm:first-child .blockquote-wrapper{
+		margin-top:0;
+	}
+
+	.blockquote-wrapper{
+		padding: 0 25px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		@media (min-width: $screen-sm-min) {
+			margin-bottom: 30px;
+			font-size: 24px;
+			line-height: 29px;
+			width: 682px;
+			padding: 0;
+		}
+		@media (min-width: $screen-md-min) {
+			width: 870px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			width: 100%;
+		}
+	}
+
+	blockquote{
+		letter-spacing: 1px;
+		text-transform : uppercase;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		background: #eef2f5;
+		padding: 15px 20px;
+		border: none;
+	}
+}
+

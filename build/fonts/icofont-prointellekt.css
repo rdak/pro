@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?9vvy97');
+    src:    url('fonts/icomoon.eot?9vvy97#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?9vvy97') format('truetype'),
+        url('fonts/icomoon.woff?9vvy97') format('woff'),
+        url('fonts/icomoon.svg?9vvy97#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-prointellekt {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site:before {
+    content: "\e900";
+}
+.icon-search:before {
+    content: "\e901";
+}
+.icon-user-not-found:before {
+    content: "\e902";
+}
+.icon-arrow-left-backtomain:before {
+    content: "\e903";
+}
+.icon-arrow-left-pages:before {
+    content: "\e904";
+}
+.icon-arrow-right-pages:before {
+    content: "\e905";
+}
+.icon-close:before {
+    content: "\e906";
+}
+.icon-comment:before {
+    content: "\e907";
+}
+.icon-contents:before {
+    content: "\e908";
+}
+.icon-e-book:before {
+    content: "\e909";
+}
+.icon-eye:before {
+    content: "\e90a";
+}
+.icon-fb-counter:before {
+    content: "\e90b";
+}
+.icon-fb-footer:before {
+    content: "\e90c";
+}
+.icon-menu:before {
+    content: "\e90d";
+}
+.icon-paper-book:before {
+    content: "\e90e";
+}
+.icon-question-user-notfound:before {
+    content: "\e90f";
+}
+.icon-read-fragment:before {
+    content: "\e910";
+}
+.icon-refresh:before {
+    content: "\e911";
+}
+.icon-reply-comment:before {
+    content: "\e912";
+}
+.icon-signature-pen:before {
+    content: "\e913";
+}
+.icon-triangle-down:before {
+    content: "\e914";
+}
+.icon-twitter-counter:before {
+    content: "\e915";
+}
+.icon-twitter-footer:before {
+    content: "\e916";
+}
+.icon-vk-counter:before {
+    content: "\e917";
+}
+.icon-vk-footer:before {
+    content: "\e918";
+}
+.icon-back:before {
+    content: "\e919";
+}
+

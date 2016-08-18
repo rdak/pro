@@ -1,0 +1,401 @@
+.navbar {
+  position: relative;
+  min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  @include clearfix;
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: $navbar-border-radius;
+  }
+}
+
+.navbar-collapse {
+  overflow-x: visible;
+  padding-right: $navbar-padding-horizontal;
+  padding-left:  $navbar-padding-horizontal;
+  height: 430px;
+  position: relative;
+  margin-top: 20px;
+  .navbar-toggle{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+    z-index: 1;
+  }
+  @media (min-width: $screen-md-min) {
+    margin: 0;
+    height: 530px;
+  }
+  @media (min-width: $screen-lg-min) {
+    position: static;
+  }
+  @include clearfix;
+  -webkit-overflow-scrolling: touch;
+
+  &.in {
+    overflow-y: auto;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+
+    &.collapse {
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0; // Override default setting
+      overflow: visible !important;
+    }
+
+    &.in {
+      overflow-y: visible;
+    }
+
+    // Undo the collapse side padding for navbars with containers to ensure
+    // alignment of right-aligned contents.
+    .navbar-fixed-top &,
+    .navbar-static-top &,
+    .navbar-fixed-bottom & {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.container,
+.container-fluid {
+  > .navbar-header,
+  > .navbar-collapse {
+    margin-right: -$navbar-padding-horizontal;
+    margin-left:  -$navbar-padding-horizontal;
+    @media (min-width: $grid-float-breakpoint) {
+      overflow: visible;
+      margin-right: 0;
+      margin-left:  0;
+    }
+  }
+  .navbar-header{
+    .nav.navbar-nav{
+      margin-left: 0;
+      margin-right: 0;
+      > li {
+        padding-top:    $navbar-padding-vertical;
+        padding-bottom: $navbar-padding-vertical;
+        float: left;
+      }
+    }
+  }
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+  border-width: 1px 0 0;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 0 $navbar-padding-horizontal;
+  margin: $navbar-padding-vertical 0;
+  font-size: 24px;
+  line-height: 21px;
+  letter-spacing: 1.7px;
+  color: #ffffff;
+  margin-right: 25px;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -$navbar-padding-horizontal;
+    }
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  //margin-right: $navbar-padding-horizontal;
+  padding: 4px 15px;
+  color: #fff;
+  @include navbar-vertical-align(34px);
+  background-image: none;
+  .icon-prointellekt{
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  &:focus {
+    outline: 0;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    display: none;
+  }
+}
+
+.navbar-header{
+  .navbar-nav > li > a{
+    font-weight: normal;
+  }
+}
+
+.navbar-nav {
+  text-align: center;
+  margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
+  > li {
+    @media (min-width: $screen-lg-min) {
+      padding-top: $navbar-padding-vertical;
+    }
+    padding-bottom: $navbar-padding-vertical;
+  }
+
+  > li > a {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    padding-top:    0px;
+    padding-bottom: 0px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $grid-float-breakpoint-max) {
+
+  }
+  @media (min-width: $screen-md-min) {
+    // Dropdowns get custom display when collapsed
+    
+  }
+
+  // Uncollapse the nav
+  margin: 0;
+  @media (min-width: $grid-float-breakpoint) {
+    float: left;
+
+    > li {
+      float: left;
+      > a {
+        
+      }
+    }
+  }
+}
+
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-right {
+    float: right !important;
+    margin-right: -$navbar-padding-horizontal;
+
+    ~ .navbar-right {
+      margin-right: 0;
+    }
+  }
+}
+
+.navbar-inverse {
+  .js-scroll &{
+    background: rgba(0, 0, 0, 0.9);
+  }
+  background-color: $navbar-inverse-bg;
+
+  .navbar-brand {
+    color: $navbar-inverse-brand-color;
+    font-family: Brandon;
+    &:hover,
+    &:focus {
+      color: $navbar-inverse-brand-hover-color;
+      background-color: $navbar-inverse-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-inverse-color;
+  }
+
+
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border: none;
+    background: none;
+    &:hover,
+    &:focus {
+      
+    }
+    .icon-bar {
+      background-color: $navbar-inverse-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-link {
+    color: $navbar-inverse-link-color;
+    &:hover {
+      color: $navbar-inverse-link-hover-color;
+    }
+  }
+}
+
+
+@media (max-width: $screen-sm-min) {
+
+  .navbar-toggle.collapsed + .nav + .nav{
+      display: none;
+  }
+
+  .container .navbar-header .nav.navbar-nav.submenu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 1;
+    li{
+      float: none !important;
+      padding-top:    $navbar-padding-vertical / 2;
+      padding-bottom: $navbar-padding-vertical / 2;
+    }
+  }
+
+  .container .navbar-header .nav.navbar-nav.submenu ul{
+    position: static;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    display: block;
+    .user-info{
+      .icon-prointellekt{
+        display: none;
+      }
+    }
+    #dLabel{
+      float: left;
+    }
+    li{
+      padding:0;
+      a{
+        padding: 0;
+      }
+    }
+  }
+}
+
+#navbar{
+  width: 100%;
+  @media (min-width: $screen-lg-min) {
+    padding: 0;
+  }
+  .navbar-nav > li{
+    float: none;
+    padding-top:    $navbar-padding-vertical / 2;
+    padding-bottom: $navbar-padding-vertical / 2;
+    @media (min-width: $screen-lg-min) {
+      float: left;
+      padding-top:    $navbar-padding-vertical;
+      padding-bottom: $navbar-padding-vertical;
+    }
+    > a{
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .container .navbar-header .nav.navbar-nav > li.user-info{
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: $navbar-padding-vertical;
+    #dLabel{
+      margin-right: 10px;
+      .icon-prointellekt{
+        display: none;
+      }
+    }
+    .dropdown-menu{
+      border: none;
+      display: inline-block;
+      position: static;
+      background: transparent;
+      min-width: unset;
+      li{
+        padding: 0;
+      }
+      .small-collapse{
+        display: none;
+      }
+      a{
+        color: #fff;
+        padding: 0;
+        line-height: 35px;
+        display: inline-block;
+        font-size: 12px;
+        position: relative;
+        &:hover,
+        &:focus{
+          background: none;
+          outline: none;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          bottom: 8px;
+          height: 6px;
+          right: -6px;
+          left: -6px;
+          z-index: -1;
+          background: #a13a78;
+          -webkit-transform-origin: left center;
+          transform-origin: left center;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: -webkit-transform cubic-bezier(0.785, .135, .15, .86) .4s;
+          transition: -webkit-transform cubic-bezier(0.785, .135, .15, .86) .4s;
+          transition: transform cubic-bezier(0.785, .135, .15, .86) .4s;
+          -webkit-transition: -webkit-transform cubic-bezier(0.785, .135, .15, .86) .4s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .4s;
+          transition: transform cubic-bezier(0.785, .135, .15, .86) .4s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .4s;
+        }
+        &:hover:before{
+          -webkit-transition: -webkit-transform cubic-bezier(0.785, .135, .15, .86) .6s;
+          transition: -webkit-transform cubic-bezier(0.785, .135, .15, .86) .6s;
+          transition: transform cubic-bezier(0.785, .135, .15, .86) .6s;
+          -webkit-transition: -webkit-transform cubic-bezier(0.785, .135, .15, .86) .6s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .6s;
+          transition: transform cubic-bezier(0.785, .135, .15, .86) .6s, -webkit-transform cubic-bezier(0.785, .135, .15, .86) .6s;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}

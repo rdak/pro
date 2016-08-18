@@ -1,0 +1,186 @@
+@import "partials/app";
+
+body{
+	background: url("/img/img-registration-bg-color.png");
+	&.contactForm-wrapper{
+		background: url("/img/img-registration-bg-color.png");
+	}
+	text-align: center;
+}
+
+.logo-brand{
+	display: inline-block;
+	margin-top: 110px;
+	font-size: 36px;
+	line-height: 100px;
+	color: #45bdc9;
+	&:hover,
+	&:focus{
+		color: #45BDC9;
+	}
+}
+
+.form-wrapper{
+	width: 270px;
+	margin: 100px auto 50px;
+	&.contacts{
+		margin-top: 200px;
+		width: 420px;
+		form{
+			width: 270px;
+			margin: 0 auto;
+		}
+		.title{
+			font-size: 24px;
+			line-height: 24px;
+		}
+	}
+	.auth_login_menu_links{
+		li{
+			width: 50%;
+			float: left;
+			a{
+				font-size: 15px;
+				line-height: 24px;
+				display: block;
+				color: #d8d8d8;
+				&:hover,
+				&:focus{
+					color: #b4b5bb;
+				}
+			}
+			&.active{
+				a{
+					color: #fff;
+					border-bottom: 10px solid #45bdc9;
+				}
+			}
+		}
+	}
+
+	.auth_login_menu_links{
+		overflow: hidden;
+	}
+	
+	p,
+	form+a{
+		font-size: 15px;
+		line-height: 20px;
+		color: #fff;
+		text-align: center;
+		margin: 10px 0 15px;
+	}
+
+	.simplelink{
+		color: #fff;
+		&:hover{
+			color: #45bdc9;
+		}
+		.icon-back{
+		    font-size: 	8px;
+			vertical-align: top;
+			margin-right: 5px;
+			line-height: 20px;
+		}
+	}
+
+	.big-title{
+		font-size:24px;
+		line-height: 24px;
+	}
+
+	.field-wrapper{
+		margin: 0 0 10px 0;
+	}
+	.field-wrapper{
+		position: relative;
+		&.field-error:after{
+			color: #a13a78;
+			border-radius: 25px;
+		    position: absolute;
+		    width: 15px;
+		    height: 15px;
+		    top: 15px;
+		    right: 35px;
+		    font-family: 'icomoon' !important;
+		    display: inline-block;
+		    font-size: 14px;
+		    content: "\e902";
+		}
+	}
+	.field-wrapper .field{
+		width: 100%;
+		outline: none;
+		border:none;
+		padding: 15px 20px;
+		background: #fff;
+		font-size:15px;
+		line-height: 20px;
+		&::-webkit-input-placeholder {color:#1d1d1d;}
+		&::-moz-placeholder          {color:#1d1d1d;}
+		&:-moz-placeholder           {color:#1d1d1d;}
+		&:-ms-input-placeholder      {color:#1d1d1d;}
+		&:focus::-webkit-input-placeholder {color: transparent;}
+		&:focus::-moz-placeholder          {color: transparent;}
+		&:focus:-moz-placeholder           {color: transparent;}
+		&:focus:-ms-input-placeholder      {color: transparent;}
+	}
+	.btn-readmore{
+		width: 100%;
+		margin-bottom: 5px;
+	  	letter-spacing: 1.3px;
+	  	margin : 0 0 15px 0;
+	  	padding : 20px 20px;
+		&,
+		&:hover,
+		&:focus{
+			color: #fff;
+		}
+	}
+
+	label{
+		cursor: pointer;
+	}
+
+	.social{
+		text-align: center;
+		display: block;
+		overflow: hidden;
+		a {
+			display: inline-block;
+			outline: none;
+			opacity: 1;
+			margin: 0 5px;
+			color: rgba(147, 147, 147, 0.5);
+			&:hover{
+				color: #45bdc9;
+			}
+		}
+		.icon-prointellekt{
+			font-size: 50px;
+		}
+	}
+
+	.tooltip.top{
+		margin: 0;
+	    margin-top: 15px;
+	    margin-left: 93px;
+        padding: 8px 0;
+        opacity: 1;
+	}
+
+	.tooltip-inner{
+		padding: 0 10px;
+		line-height: 30px;
+	    font-size: 12px;
+	    letter-spacing: 0.5px;
+		background: #a13a78;
+		border-radius: 0;
+	}
+
+	.tooltip.top .tooltip-arrow{
+		border-top-color: #a13a78;
+	    margin-left: -10px;
+	    border-width: 10px 10px 0;
+	}
+}

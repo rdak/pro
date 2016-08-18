@@ -1,0 +1,76 @@
+.discussionList-body{
+	padding-top: 30px;
+	overflow: hidden;
+	@media (min-width: $screen-lg-min) {
+		padding:0;
+		width: 100%;
+	}
+	.title-section{
+		overflow: hidden;
+		text-align: left;
+		.title{
+			display: inline-block;
+			font-size: 24px;
+			line-height: 32px;
+			color: #1d1d1d;
+			font-weight: 600;
+			@media (min-width: $screen-sm-min) {
+				float: left;
+			}
+			padding: 15px 0;
+			margin: 0 25px 0 0;
+		}
+		ul{
+			overflow: hidden;
+			margin-left: -20px;
+			@media (min-width: $screen-sm-min) {
+				margin: 0;
+				float: left;
+			}
+			li{
+				float: left;
+				a{
+					padding: 20px;
+					display: block;
+					font-size: 15px;
+					line-height: 24px;
+					color: #949494;
+					&:hover,
+					&:active{
+						text-decoration: none;
+						color: #45bdc9;
+					}
+					&:after{
+						position: absolute;
+						font-family: 'icomoon' !important;
+						display: inline-block;
+						content: "\e914";
+						font-size: 12px;
+						margin-left: 5px;
+						opacity: 0;
+					}
+				}
+				&.active{
+					a{
+						position: relative;					
+						color: #45bdc9;
+						&:after{
+							opacity: 1;
+							-webkit-transition: linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
+						    transition: linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
+						}
+					}
+				}
+			}
+		}
+		.btn-readmore{
+			@media (min-width: $screen-sm-min) {
+				float: right;
+			}
+		}
+	}
+	.discussion-list{
+		margin-bottom: 50px;
+	}
+	
+}

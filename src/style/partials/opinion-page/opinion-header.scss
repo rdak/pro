@@ -1,0 +1,33 @@
+.opinion-header{
+	&.common-header{
+		padding: 105px 0 0 0;
+		@media (min-width: $screen-md-min) {
+			padding: 130px 0 0 0;
+		}
+	}
+
+	.opinion-block{
+		.info{
+			margin-top: 10px;
+		}
+		.name {
+			margin-bottom: 40px;
+		}
+		.date{
+			margin: 0 0 25px 0;
+		}
+		&:before{
+			content : '“';
+			font-size: 72px;
+			line-height: 42px;
+			margin-right: 5px;
+		    font-weight: 900;
+		    letter-spacing: 6px;
+			float: left;
+		    width: 100%;
+		    @media (min-width: $screen-sm-min) {
+			    width: 45px;
+			}
+		}
+	}
+}

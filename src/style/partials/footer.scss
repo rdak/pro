@@ -1,0 +1,133 @@
+.footer{
+	margin-top: 60px;
+	padding: 15px 0px;
+	background: #1d1d1d;
+	color: #fff;
+	position: relative;
+    z-index: 0;
+
+    @media (max-width: $screen-sm-min) {
+	    .col-xs-12{
+	    	text-align: center;
+	    	.support{
+	    		text-align: center;
+	    	}
+	    }
+	}
+    .links{
+    	a{
+    		display: inline-block;
+    	}
+    }
+	a,
+	a:hover,
+	a:focus{
+		color: #fff;
+		text-decoration: none;
+	}
+	.brand{
+		color: rgba(255,255,255,0.5);
+		letter-spacing: 1.4px;
+		padding: 0 15px;
+    	margin: 5px -15px;
+		display: block;
+		font-size: 20px;
+		line-height: 25px;
+    	font-family: Brandon;
+	}
+	.navigation{
+		padding: 0;
+		margin: 0;
+		font-size: 12px;
+		line-height: 15px;
+		font-weight: bold;
+		display: inline-block;
+		li {
+			padding: 12px 0;			
+			text-align: center;
+			@media (min-width: $screen-sm-min) {
+				display: inline-block;
+				float: left;
+			}
+		}
+		
+		a {
+			color: #fff;
+			padding: 0 15px;
+			display: block;
+			text-transform: uppercase;
+		}
+	}
+
+	.social{
+		text-align: right;
+		display: inline-block;
+		@media (min-width: $screen-sm-min) {
+			display: block;
+		}
+		a {
+			display: inline-block;
+			outline: none;
+			float: right;
+			opacity: 1;
+			padding: 0 5px;
+			color: rgba(255, 255, 255, 0.7);
+			.icon-prointellekt{
+				font-size: 35px;
+			}
+			@media (min-width: $screen-sm-min) {
+				margin-left: 10px;
+				padding: 0;
+			}
+			&:hover{
+				color: #45bdc9;
+			}
+		}
+		.svg.svg-sircle-vk{
+			background-image: url(/svg/vk-footer.svg);
+		}
+
+		.svg.svg-sircle-fb{
+			background-image: url(/svg/fb-footer.svg);
+		}
+
+		.svg.svg-sircle-tw{
+			background-image: url(/svg/twitter-footer.svg);
+		}
+
+		.svg.svg-sircle-vk,
+		.svg.svg-sircle-fb,
+		.svg.svg-sircle-tw{
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	.copyright{
+		@media (max-width: $screen-sm-min) {
+			float: right;
+		}
+	}
+	.support{
+		@media (max-width: $screen-sm-min) {
+			.text-right {
+				text-align: center;
+			}
+		}
+		a{
+			color: #2DA1AD;
+			&:focus
+			&:active,
+			&:hover{
+				color: #45BDC9;
+			}
+		}
+	}
+
+	.copyright,
+	.support{
+		font-size: 12px;
+		line-height: 2;
+	}
+}

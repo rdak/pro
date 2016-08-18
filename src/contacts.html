@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fonts/icofont-prointellekt.css">
+
+    <link href="fonts/Proxima Nova/Proxima Nova Regular.otf" rel="stylesheet" type="text/css">
+    <link href="fonts/Brandon Grotesque (logo)/Brandon_reg.otf" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/main.js"></script>
+    <title>Contacts</title>
+</head>
+<body class="contactForm-wrapper">
+    //= template/header.html
+    <div class="form-wrapper contacts">
+        <p class="title">КОНТАКТЫ</p>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="message">
+                <p class="text-center">
+                    У вас есть материалы, которыми вы готовы поделиться?<br>
+                    Мы всегда рады знакомству с новыми авторами!
+                </p>
+                <form action="">
+                    <div class="field-wrapper">
+                        <input class="field" type="text" name="name" placeholder="Имя">
+                    </div>
+                    <div class="field-wrapper">
+                        <input class="field" type="text" name="phone" placeholder="Телефон">
+                    </div>
+                    <div class="field-wrapper">
+                        <input class="field" type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="field-wrapper">
+                        <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Сообщение"></textarea>
+                    </div>
+                    <a role="tab" data-toggle="tab" class="btn-readmore js-submitform" href="#thanks">
+                        Отправить
+                    </a>
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="thanks">
+                <p class="text-center">
+                    Спасибо! Ваше сообщение отправлено.
+                </p>
+                <a href="/index.html" class="simplelink">
+                    <i class="icon-prointellekt icon-back"></i> На главную
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

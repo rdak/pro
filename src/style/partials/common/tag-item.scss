@@ -1,0 +1,36 @@
+.section-tag-list{
+	overflow: hidden;
+	margin-bottom: 10px;
+	.tag-item{
+		font-size: 12px;
+		line-height: 15px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		color: #1d1d1d;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		float: left;
+		padding: 5px 10px;
+		background: rgba(54, 188, 164, 0.3);
+		
+		-webkit-transition: background linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
+	    transition: background linear .3s,-webkit-transform cubic-bezier(0.785,.135,.15,.86) .3s;
+
+		&:hover{
+			background: rgba(54, 188, 164, 0.15);
+		}
+		
+		&.tag-article{
+			color: #fff;
+			background: #a13a78;
+		}
+		&.tag-news{
+			color: #fff;
+			background: #37bca5;
+		}
+		&.tag-opinion{
+			color: #fff;
+			background: #45bdc9;
+		}
+	}
+}

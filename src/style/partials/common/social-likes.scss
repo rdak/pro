@@ -1,0 +1,31 @@
+.social-likes{
+	margin-bottom: 30px;
+	overflow: hidden;
+	.social-net{
+		color: #fff;
+		display: inline-block;
+		width: 65px;
+		float: left;
+		text-align: center;
+		padding: 5px 10px;
+		margin-right: 10px;
+		i{
+			font-size: 18px;
+			line-height: 14px;
+		}
+		.count-share{
+			margin-left: 5px;
+			letter-spacing: 1px;
+			font-size:12px;
+		}
+	}
+	.vkontakte{
+		background: #426b9a;
+	}
+	.facebook{
+		background: #4c68b3;
+	}
+	.twitter{
+		background: #00abed;
+	}
+}

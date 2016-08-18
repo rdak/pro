@@ -1,0 +1,20 @@
+{
+  "name": "prointellekt",
+  "version": "0.0.0",
+  "authors": [
+    "rdak <seva@chebykin.com>"
+  ],
+  "dependencies": {
+    "components-font-awesome" : "*",
+    "normalize.css": "*",
+    "jquery": "2.*"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

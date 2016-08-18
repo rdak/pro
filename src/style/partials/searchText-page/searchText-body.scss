@@ -1,0 +1,67 @@
+.searchText-header{
+	position: static;
+}
+
+.page-body{
+	.result-title{
+		padding: 10px 0;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0;
+	}
+
+	.search-item{
+		padding: 15px 0;
+		.find-text{
+			display: inline-block;
+			background: rgba(54, 188, 164, 0.3);
+			padding: 0 2px;
+		}
+
+		.section-tag-list{
+			float: left;
+			margin-bottom: 0;
+			margin-right: 10px;
+		}
+		
+		.title{
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 28px;
+			color: #000;
+			margin: 0 0 20px 0;
+			@media (min-width: $screen-sm-min) {
+				font-size: 24px;
+				line-height: 32px;
+				margin: 0 0 5px 0;
+			}
+		}
+
+		.title{
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 24px;
+			margin: 0 0 19px 0;
+		}
+
+		.content{
+			font-size: 15px;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+
+		.date{
+			color: #949494;
+			letter-spacing: 1px;
+			font-size: 12px;
+			line-height: 24px;
+			font-weight: 600;
+		}
+	}
+}
+
+@media (max-width: $screen-lg-min) {
+	.ad{
+		display: none;
+	}
+}
