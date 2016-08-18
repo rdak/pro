@@ -10618,38 +10618,40 @@ if (typeof jQuery === 'undefined') {
 
   Dropdown.prototype.toggle = function (e) {
     var $this = $(this)
+    if(window.innerWidth>768){
 
-    if ($this.is('.disabled, :disabled')) return
+      if ($this.is('.disabled, :disabled')) return
 
-    var $parent  = getParent($this)
-    var isActive = $parent.hasClass('open')
+      var $parent  = getParent($this)
+      var isActive = $parent.hasClass('open')
 
-    clearMenus()
+      clearMenus()
 
-    if (!isActive) {
-      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
-        // if mobile we use a backdrop because click events don't delegate
-        $(document.createElement('div'))
-          .addClass('dropdown-backdrop')
-          .insertAfter($(this))
-          .on('click', clearMenus)
+      if (!isActive) {
+        if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
+          // if mobile we use a backdrop because click events don't delegate
+          $(document.createElement('div'))
+            .addClass('dropdown-backdrop')
+            .insertAfter($(this))
+            .on('click', clearMenus)
+        }
+
+        var relatedTarget = { relatedTarget: this }
+        $parent.trigger(e = $.Event('show.bs.dropdown', relatedTarget))
+
+        if (e.isDefaultPrevented()) return
+
+        $this
+          .trigger('focus')
+          .attr('aria-expanded', 'true')
+
+        $parent
+          .toggleClass('open')
+          .trigger($.Event('shown.bs.dropdown', relatedTarget))
       }
 
-      var relatedTarget = { relatedTarget: this }
-      $parent.trigger(e = $.Event('show.bs.dropdown', relatedTarget))
-
-      if (e.isDefaultPrevented()) return
-
-      $this
-        .trigger('focus')
-        .attr('aria-expanded', 'true')
-
-      $parent
-        .toggleClass('open')
-        .trigger($.Event('shown.bs.dropdown', relatedTarget))
+      return false
     }
-
-    return false
   }
 
   Dropdown.prototype.keydown = function (e) {
